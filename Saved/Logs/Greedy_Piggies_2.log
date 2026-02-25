@@ -1190,3 +1190,151 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.02.25-12.25.24:424][  0]LogEngine: Initializing Engine...
 [2026.02.25-12.25.24:605][  0]LogTedsSettings: UTedsSettingsEditorSubsystem::Initialize
 [2026.02.25-12.25.24:610][  0]LogStylusInput: Initializing StylusInput subsystem.
+[2026.02.25-12.25.24:871][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.11.dll
+[2026.02.25-12.25.24:891][  0]LogTextureFormatOodle: Display: Oodle Texture loading DLL: oo2tex_win64_2.9.12.dll
+[2026.02.25-12.25.24:919][  0]LogChaosDD: Creating Chaos Debug Draw Scene for world Untitled
+[2026.02.25-12.25.24:934][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.02.25-12.25.24:934][  0]LogInit: Texture streaming: Enabled
+[2026.02.25-12.25.24:946][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] AnalyticsET::StartSession ( APIServer = https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data. AppVersion = 5.6.1-44394996+++UE5+Release-5.6 )
+[2026.02.25-12.25.24:954][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.02.25-12.25.24:965][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.02.25-12.25.24:966][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.02.25-12.25.24:967][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.02.25-12.25.24:967][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.02.25-12.25.24:967][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.02.25-12.25.24:967][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.02.25-12.25.24:967][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.02.25-12.25.24:967][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.02.25-12.25.24:967][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.02.25-12.25.24:977][  0]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.02.25-12.25.25:047][  0]LogAudioMixer: Display: Using Audio Hardware Device PL2780H (High Definition Audio Device)
+[2026.02.25-12.25.25:047][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.02.25-12.25.25:051][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.02.25-12.25.25:051][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.02.25-12.25.25:053][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=1
+[2026.02.25-12.25.25:053][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2026.02.25-12.25.25:054][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2026.02.25-12.25.25:054][  0]LogInit: FAudioDevice initialized with ID 1.
+[2026.02.25-12.25.25:054][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=1
+[2026.02.25-12.25.25:055][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2026.02.25-12.25.25:055][  0]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 1
+[2026.02.25-12.25.25:062][  0]LogCsvProfiler: Display: Metadata set : largeworldcoordinates="1"
+[2026.02.25-12.25.25:067][  0]LogInit: Undo buffer set to 256 MB
+[2026.02.25-12.25.25:067][  0]LogInit: Transaction tracking system initialized
+[2026.02.25-12.25.25:081][  0]LogSourceControl: Display: Uncontrolled Changelist persistency file loaded ../../../../../../Users/2326296/Documents/GitHub/Greedy_Piggies/Saved/SourceControl/UncontrolledChangelists.json
+[2026.02.25-12.25.25:144][  0]LocalizationService: Localization service is disabled
+[2026.02.25-12.25.25:412][  0]LogFileCache: Scanning file cache for directory 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/' took 0.04s
+[2026.02.25-12.25.25:493][  0]LogPython: Python enabled via CVar 'Engine.Python.IsEnabledByDefault'
+[2026.02.25-12.25.25:493][  0]LogPython: Using Python 3.11.8
+[2026.02.25-12.25.25:540][  0]LogPython: Display: No pip-enabled plugins with python dependencies found, skipping
+[2026.02.25-12.25.25:881][  0]LogRenderer: Requested compilation of Path Tracing RTPSOs (8 permutations).
+[2026.02.25-12.25.25:898][  0]LogLevelSequenceEditor: LevelSequenceEditor subsystem initialized.
+[2026.02.25-12.25.26:133][  0]LogEditorDataStorage: Initializing
+[2026.02.25-12.25.26:137][  0]LogEditorDataStorage: Initialized
+[2026.02.25-12.25.26:147][  0]LogCore: Display: GameplayInsights module auto-connecting to local trace server...
+[2026.02.25-12.25.26:162][  0]LogAssetRegistry: Display: Triggering cache save on discovery complete
+[2026.02.25-12.25.26:287][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.02.25-12.25.26:295][  0]SourceControl: Revision control is disabled
+[2026.02.25-12.25.26:295][  0]LogUnrealEdMisc: Loading editor; pre map load, took 15.304
+[2026.02.25-12.25.26:297][  0]Cmd: MAP LOAD FILE="../../../../../../Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/DM_Final_Blockout.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2026.02.25-12.25.26:301][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.02.25-12.25.26:301][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.02.25-12.25.26:334][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.02.25-12.25.26:337][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2026.02.25-12.25.27:261][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'DM_Final_Blockout'.
+[2026.02.25-12.25.27:261][  0]LogChaosDD: Creating Chaos Debug Draw Scene for world DM_Final_Blockout
+[2026.02.25-12.25.27:361][  0]LogAssetRegistry: Display: Asset registry cache written as 76.9 MiB to ../../../../../../Users/2326296/Documents/GitHub/Greedy_Piggies/Intermediate/CachedAssetRegistry_*.bin
+[2026.02.25-12.25.29:149][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2026.02.25-12.25.29:242][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2026.02.25-12.25.29:243][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2026.02.25-12.25.29:243][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.161ms to complete.
+[2026.02.25-12.25.29:254][  0]LogUnrealEdMisc: Total Editor Startup Time, took 18.263
+[2026.02.25-12.25.29:374][  0]LogPlacementMode: Display: The Asset Registry is not yet fully loaded so some placeable classes might be missing.
+[2026.02.25-12.25.29:493][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.02.25-12.25.29:583][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.02.25-12.25.29:672][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.02.25-12.25.29:760][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.02.25-12.25.29:857][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:858][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/StarterContent.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:858][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:859][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_FirstPerson.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:859][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:860][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_FirstPersonBP.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:860][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:861][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_HandheldARBP.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:861][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:862][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_ThirdPerson.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:862][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:863][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_ThirdPersonBP.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:863][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:864][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_TopDown.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:864][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:865][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_TopDownBP.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:865][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:866][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_VehicleAdvBP.upack', mount point: 'root:/'
+[2026.02.25-12.25.29:867][  0]LogPakFile: Initializing PakPlatformFile
+[2026.02.25-12.25.29:867][  0]LogPakFile: Display: Mounted Pak file 'C:/Program Files/Epic Games/5.6/FeaturePacks/TP_VirtualRealityBP.upack', mount point: 'root:/'
+[2026.02.25-12.25.30:358][  0]LogSlate: Took 0.000956 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.02.25-12.25.30:363][  0]LogSlate: Took 0.000928 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2026.02.25-12.25.30:364][  0]LogSlate: Took 0.000694 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2026.02.25-12.25.30:464][  0]LogSlate: Took 0.003070 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2026.02.25-12.25.30:566][  0]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2026.02.25-12.25.30:856][  0]LogPSOHitching: Encountered 50 PSO creation hitches so far (11 graphics, 39 compute). 0 of them were precached.
+[2026.02.25-12.25.31:077][  0]LogPSOHitching: Encountered 100 PSO creation hitches so far (12 graphics, 88 compute). 0 of them were precached.
+[2026.02.25-12.25.31:423][  0]LogPSOHitching: Encountered 150 PSO creation hitches so far (30 graphics, 120 compute). 0 of them were precached.
+[2026.02.25-12.25.31:596][  0]LogStall: Startup...
+[2026.02.25-12.25.31:599][  0]LogStall: Startup complete.
+[2026.02.25-12.25.31:604][  0]LogLoad: (Engine Initialization) Total time: 20.61 seconds
+[2026.02.25-12.25.31:990][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2026.02.25-12.25.31:990][  0]LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+[2026.02.25-12.25.32:057][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.02.25-12.25.32:059][  0]LogPython: Display: Running start-up script C:/Program Files/Epic Games/5.6/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... started...
+[2026.02.25-12.25.32:133][  0]LogPython: registering <class 'ControlRigWorkflows.workflow_deformation_rig_preset.provider'>
+
+[2026.02.25-12.25.32:143][  0]LogPython: Display: Running start-up script C:/Program Files/Epic Games/5.6/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... took 83.981 ms
+[2026.02.25-12.25.32:144][  0]LoadErrors: Warning: While trying to load package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/BP_Chair, a dependent package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Brown was not available. Additional explanatory information follows:
+FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Brown has a valid, mounted, mount point but does not exist either on disk or in iostore. The uncooked file would be expected on disk at 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Brown'. Perhaps it has been deleted or was not synced?
+
+[2026.02.25-12.25.32:144][  0]LoadErrors: Warning: While trying to load package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/BP_Chair, a dependent package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Dark_Brown was not available. Additional explanatory information follows:
+FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Dark_Brown has a valid, mounted, mount point but does not exist either on disk or in iostore. The uncooked file would be expected on disk at 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Dark_Brown'. Perhaps it has been deleted or was not synced?
+
+[2026.02.25-12.25.32:144][  0]LoadErrors: Warning: While trying to load package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/BP_Pillar, a dependent package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Grey was not available. Additional explanatory information follows:
+FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Grey has a valid, mounted, mount point but does not exist either on disk or in iostore. The uncooked file would be expected on disk at 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Grey'. Perhaps it has been deleted or was not synced?
+
+[2026.02.25-12.25.32:144][  0]LoadErrors: Warning: While trying to load package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/BP_SafeDoor, a dependent package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Grey was not available. Additional explanatory information follows:
+FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Grey has a valid, mounted, mount point but does not exist either on disk or in iostore. The uncooked file would be expected on disk at 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Grey'. Perhaps it has been deleted or was not synced?
+
+[2026.02.25-12.25.32:144][  0]LoadErrors: Warning: While trying to load package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/BP_Shelf, a dependent package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Brown was not available. Additional explanatory information follows:
+FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Brown has a valid, mounted, mount point but does not exist either on disk or in iostore. The uncooked file would be expected on disk at 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Brown'. Perhaps it has been deleted or was not synced?
+
+[2026.02.25-12.25.32:144][  0]LoadErrors: Warning: While trying to load package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/BP_Shelf, a dependent package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Dark_Brown was not available. Additional explanatory information follows:
+FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Dark_Brown has a valid, mounted, mount point but does not exist either on disk or in iostore. The uncooked file would be expected on disk at 'C:/Users/2326296/Documents/GitHub/Greedy_Piggies/Content/Level_Blockout_DylanM/Blueprints_DM_Blockout/DM_Mats/MT_Dark_Brown'. Perhaps it has been deleted or was not synced?
+
+[2026.02.25-12.25.32:454][  1]LogAssetRegistry: AssetRegistryGather time 0.2010s: AssetDataDiscovery 0.0180s, AssetDataGather 0.0812s, StoreResults 0.1019s. Wall time 12.8410s.
+	NumCachedDirectories 1847. NumUncachedDirectories 22. NumCachedFiles 7946. NumUncachedFiles 4.
+	BackgroundTickInterruptions 0.
+[2026.02.25-12.25.32:498][  1]LogPlacementMode: Display: The Asset Registry is done with its initial scan, the list of placeable classes has been updated.
+[2026.02.25-12.25.32:510][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000000 seconds (updated 0 objects)
+[2026.02.25-12.25.32:510][  1]LogSourceControl: Uncontrolled asset discovery started...
+[2026.02.25-12.25.32:635][  2]LogEOSSDK: LogEOS: SDK Config Platform Update Request Successful, Time: 8.360220
+[2026.02.25-12.25.32:637][  2]LogEOSSDK: LogEOSAnalytics: EOS SDK Analytics disabled for route [1].
+[2026.02.25-12.25.32:638][  2]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 8.421194
+[2026.02.25-12.25.33:099][  4]LogPSOHitching: Encountered 200 PSO creation hitches so far (46 graphics, 154 compute). 0 of them were precached.
+[2026.02.25-12.25.33:156][  4]LogSourceControl: Uncontrolled asset discovery finished in 0.646172 seconds (Found 7352 uncontrolled assets)
+[2026.02.25-12.25.33:614][  4]LogD3D12RHI: Waited for PSO creation for 100.000000ms
+[2026.02.25-12.25.33:617][  4]LogD3D12RHI: Waited for PSO creation for 100.000000ms
+[2026.02.25-12.25.33:628][  4]LogD3D12RHI: Waited for PSO creation for 100.000000ms
+[2026.02.25-12.25.33:628][  4]LogD3D12RHI: Waited for PSO creation for 100.000000ms
+[2026.02.25-12.25.33:686][  4]LogPSOHitching: Encountered 250 PSO creation hitches so far (63 graphics, 187 compute). 0 of them were precached.
+[2026.02.25-12.25.33:713][  4]LogD3D12RHI: Waited for PSO creation for 200.000000ms
+[2026.02.25-12.25.33:716][  4]LogD3D12RHI: Waited for PSO creation for 200.000000ms
+[2026.02.25-12.25.33:727][  4]LogD3D12RHI: Waited for PSO creation for 200.000000ms
+[2026.02.25-12.25.33:728][  4]LogD3D12RHI: Waited for PSO creation for 200.000000ms
