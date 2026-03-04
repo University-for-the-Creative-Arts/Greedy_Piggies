@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{0C45EE55-47B7-56AE-8538-19976B530628}",
+	"EngineAssociation": "{AD661D90-49DD-77A7-73AB-9E981A94A793}",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -12,11 +12,11 @@
 			]
 		},
 		{
-			"Name": "JsonBlueprintUtilities",
+			"Name": "SteamSockets",
 			"Enabled": true
 		},
 		{
-			"Name": "AnalyticsBlueprintLibrary",
+			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
 		}
 	]
