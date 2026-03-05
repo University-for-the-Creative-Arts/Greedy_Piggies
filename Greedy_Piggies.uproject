@@ -12,11 +12,11 @@
 			]
 		},
 		{
-			"Name": "JsonBlueprintUtilities",
+			"Name": "SteamSockets",
 			"Enabled": true
 		},
 		{
-			"Name": "AnalyticsBlueprintLibrary",
+			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
 		}
 	]
