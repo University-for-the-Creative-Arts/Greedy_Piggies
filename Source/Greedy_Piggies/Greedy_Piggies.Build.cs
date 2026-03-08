@@ -13,7 +13,9 @@ public class Greedy_Piggies : ModuleRules
             "Engine", 
             "InputCore", 
             "OnlineSubsystem", 
-            "OnlineSubsystemSteam" 
+            "OnlineSubsystemSteam", 
+            "Json", 
+            "JsonUtilities" 
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] {  });
