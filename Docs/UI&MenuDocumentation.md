@@ -1,45 +1,82 @@
-Gemini said
-🐷 Greedy Piggies: UI & Systems Development Progress
-This document outlines the current state of the User Interface and backend logic for Greedy Piggies. Our focus has been on creating a seamless bridge between complex economic data and player-facing interactions.
+# UI Dev-Log: Greedy Piggies
+### UI/UX Updates & Economic Backend Progress
 
-🖥️ Menu Hierarchy & UX Design
-We are currently iterating on the "Web-UI" aesthetic, mimicking in-game apps for the shop and stock market.
+Progress on the Greedy Piggies interface, refining how players navigate between the game's menus and the economic systems. Our goal is to make the transition between standard gameplay and the "Financial Web" UI feel natural and easy to read.
 
-Main & Navigation Menus
-The main menu is functional, featuring a bold, high-contrast style. We are using grey-box prototyping for the Pause and Options menus to ensure the UX flow is solid before applying final assets.
+---
 
-Menu	Filename	Status
-Main Menu	MainMenu.png	Active - Includes Online/Local & Manual
-Pause Menu	PauseMenu.png	Prototype - Basic layout & sliders
-Options	OptionsMenu.png	Prototype - Sub-menu navigation
-In-Game "Websites"
-The core gameplay revolves around two primary interfaces: the Shop for upgrades and the Stock Market for wealth accumulation.
+## 🖥️ I. The Frontend: Player Experience & Navigation
 
-Shop (WIP): Utilizes a dynamic three-card layout.
+Our menu systems are designed with a hierarchical flow, ensuring the player can transition from the main stage to the granular settings without losing context.
 
-Stocks: Features "IPM" (International PigMachine Corp) listings and a dedicated graph area for market trends.
+### 1. Main Entry & Global States
+We’ve structured the menu system to maintain a clear hierarchy, allowing players to move from the main screen to settings without losing their place. Main Entry & Global States: The Main Menu provides direct access to local and online modes. We have also unified the Pause and Options menus to ensure a consistent, unobtrusive overlay that doesn't distract from the game state.
 
-🛠️ Blueprint & Systems Architecture
-The logic behind the scenes ensures that data remains synchronized across the UI and the Player Character.
+![MainMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/MainMenu.png)
+*Figure 1.1: The primary landing hub featuring the Greedy Piggies branding and core play-mode selection.*
 
-1. Shop & Card Interaction
-We’ve implemented an event-driven system to handle card selection. By breaking the S_CardData struct, we can pass price and rarity data directly to the player's score and hand variables.
+![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/PauseMenu.png)
+*Figure 1.2: Standardized Pause Overlay for real-time game state management.*
 
-2. Market Generation & Ratios
-The stock market uses a Shuffle algorithm to ensure varied gameplay each round.
+![OptionsMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/OptionsMenu.png)
+*Figure 1.3: Sub-menu architecture for Control mapping and audio/visual toggles.*
 
-Dynamic List: Items are constructed as objects and injected into the ListView.
+---
 
-Investment Logic: We’ve established a math-heavy flow to calculate the Investment Ratio based on a 100,000.0 baseline.
+## 📈 II. The Marketplace: Shop & Stock Ecosystem
 
-3. Dynamic RSS Feed & Widget Control
-To add flavor and real-time feedback, an RSS Feed system selects random headlines and plays them through a timed animation loop.
+The core of Greedy Piggies revolves around two distinct "websites" within the game’s UI: the Shop and the Stock Market.
 
-📋 Technical Summary
-[!NOTE]
-Performance Optimization: All UI elements are currently being moved toward a "Data-Driven" model. Using Structs allows us to balance the game's economy without diving into the Blueprint graphs for every minor tweak.
+### 1. Procedural Shopfront
+The Shop uses a modular card-based system. Currently, the WIP layout supports a three-card display where players can purchase upgrades or assets.
 
-Input Mode: Handled via Set Input Mode Game And UI to ensure seamless transitions between movement and menu interaction.
+![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/ShopMenuWIP.png)
+[INSERT IMAGE HERE: ShopMenuWIP.png]
+*Figure 2.1: Early layout for the Shop Website, utilizing a Tab-based navigation system.*
 
-State Management: Widget Switchers are utilized to toggle between the "Shop" and "Stock" tabs efficiently.
+### 2. The Stock Exchange (IPM)
+The Stock Market is our most data-heavy UI component. It features a list of tradable entities (such as the International PigMachine Corporation) and a dedicated graph area for visualizing market volatility.
 
+![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/StocksMenu.png)
+*Figure 2.2: Advanced Stock UI featuring real-time "Invest" buttons and a data-visualization canvas.*
+
+---
+
+## ⚙️ III. Technical Architecture (Blueprint Breakdown)
+
+Behind the visuals, we have implemented a robust event-driven system to handle the complexities of a simulated economy.
+
+### 1. Dynamic Content & RSS Feeds
+To add flavor and market context, we’ve built a scrolling RSS News Feed. This system pulls random headlines and cycles them through an animated widget, keeping the player informed of "market shifts."
+
+| Feature | Implementation | Goal |
+| :--- | :--- | :--- |
+| **RSS Feed** | Random Array + Animation States | Immersive flavor text & updates |
+| **Input Mode** | Game and UI Toggle | Ensure mouse focus during financial tasks |
+| **Stock Gen** | Shuffle + Clear List | Prevents duplicate stocks in a single round |
+
+[INSERT IMAGE HERE: Code3.png]
+*Figure 3.1: RSS Feed logic and UI Input Mode management.*
+
+### 2. Financial Logic & Investment Ratios
+We’ve developed a specialized math flow to handle investments. This includes a `BP_StockObject` constructor that calculates value based on a base ratio against a 100,000.0 variable.
+
+* **Card Interaction:** When a card is clicked, the system breaks the `S_CardData` struct and updates the character's score and hand.
+* **Market Shuffle:** Every round, the market is purged and re-populated with fresh entries from the `AllStockArray`.
+
+
+![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/ShopCode.png)
+*Figure 3.2: Card selection binding and player data synchronization.*
+
+![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/StocksCode.png)
+*Figure 3.3: Stock generation shuffle logic and Investment Ratio calculations.*
+
+---
+
+## 🚀 IV. Development Roadmap
+
+With the core UI containers and backend data structures in place, our next sprint will focus on:
+
+* **Polishing the Graphing Tool:** Transitioning the blue canvas in the Stock UI to a functional, real-time line graph.
+* **SFX Integration:** Adding "cha-ching" cues for successful investments and purchases.
+* **Visual Polish:** Replacing the grey-box placeholders in the Options menu with themed pig-iron assets.
