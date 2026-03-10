@@ -1,7 +1,7 @@
-# UI Dev-Log: Greedy Piggies
+# UI & Menus Dev-Log: Greedy Piggies
 ### UI/UX Updates & Economic Backend Progress
 
-Progress on the Greedy Piggies interface, refining how players navigate between the game's menus and the economic systems. Our goal is to make the transition between standard gameplay and the "Financial Web" UI feel natural and easy to read.
+Progress on the Greedy Piggies interface, refining how players navigate between the game's menus and the economic systems. The goal has been moving away from "placeholder grey-box" mode and actually hooking our financial logic into the visual elements to make the transition between standard gameplay and the "Financial Web" UI feel natural and easy to read. It’s a bit of a balancing act between making it look like a cohesive game and not breaking the underlying math.
 
 ---
 
@@ -11,6 +11,9 @@ Our menu systems are designed with a hierarchical flow, ensuring the player can 
 
 ### 1. Main Entry & Global States
 We’ve structured the menu system to maintain a clear hierarchy, allowing players to move from the main screen to settings without losing their place. Main Entry & Global States: The Main Menu provides direct access to local and online modes. We have also unified the Pause and Options menus to ensure a consistent, unobtrusive overlay that doesn't distract from the game state.
+- We’ve implemented a standard Set Input Mode UIOnly logic when the pause menu triggers. This ensures the player isn't accidentally clicking the world while navigating menus.
+- We’re using a standard parent-child structure for the menus. The main menu is a single UserWidget
+- We’ve hooked up the UI to the Enhanced Input system. As you can see in the screenshot below, we’re currently mapping user interactions to the EnhancedActionKeyMappings
 
 ![MainMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/MainMenu.png)
 *Figure 1.1: The primary landing hub featuring the Greedy Piggies branding and core play-mode selection.*
@@ -20,6 +23,9 @@ We’ve structured the menu system to maintain a clear hierarchy, allowing playe
 
 ![OptionsMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/OptionsMenu.png)
 *Figure 1.3: Sub-menu architecture for Control mapping and audio/visual toggles.*
+
+![OptionsMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/GamepadControlsMenu.png)
+*Figure 1.4: The current Gamepad remapping screen. We are binding UI buttons to the input context so the player can verify their layout on the fly.*
 
 ---
 
@@ -31,7 +37,6 @@ The core of Greedy Piggies revolves around two distinct "websites" within the ga
 The Shop uses a modular card-based system. Currently, the WIP layout supports a three-card display where players can purchase upgrades or assets.
 
 ![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/ShopMenuWIP.png)
-[INSERT IMAGE HERE: ShopMenuWIP.png]
 *Figure 2.1: Early layout for the Shop Website, utilizing a Tab-based navigation system.*
 
 ### 2. The Stock Exchange (IPM)
@@ -55,7 +60,7 @@ To add flavor and market context, we’ve built a scrolling RSS News Feed. This 
 | **Input Mode** | Game and UI Toggle | Ensure mouse focus during financial tasks |
 | **Stock Gen** | Shuffle + Clear List | Prevents duplicate stocks in a single round |
 
-[INSERT IMAGE HERE: Code3.png]
+![PauseMenu](https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/Code3.png)
 *Figure 3.1: RSS Feed logic and UI Input Mode management.*
 
 ### 2. Financial Logic & Investment Ratios
@@ -79,4 +84,4 @@ With the core UI containers and backend data structures in place, our next sprin
 
 * **Polishing the Graphing Tool:** Transitioning the blue canvas in the Stock UI to a functional, real-time line graph.
 * **SFX Integration:** Adding "cha-ching" cues for successful investments and purchases.
-* **Visual Polish:** Replacing the grey-box placeholders in the Options menu with themed pig-iron assets.
+* **Visual Polish:** Replacing the grey-box placeholders in the Options menu with themed pig-vegas assets.
