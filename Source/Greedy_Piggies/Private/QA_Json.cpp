@@ -5,8 +5,6 @@
 #include "JsonObjectConverter.h"
 #include "Misc/FileHelper.h"
 
-/*
-
 QA_Json::QA_Json()
 {
 }
@@ -15,6 +13,14 @@ QA_Json::~QA_Json()
 {
 }
 
+/*
+void AQA_Json::TestFunction()
+{
+    
+}
+*/
+
+/*
 // 1. Define your data structure
 USTRUCT(BlueprintType)
 struct FMyGameData
