@@ -3,15 +3,16 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
+#include "QA_Json.generated.h"
 
 
-class GREEDY_PIGGIES_API QA_Json
+UCLASS()
+class GREEDY_PIGGIES_API UQA_Json : public UBlueprintFunctionLibrary
 {
-public:
-	QA_Json();
-	~QA_Json();
+	GENERATED_BODY()
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 testInt;
-
-	UFUNCTION(BlueprintCallable, Category = "CustomJson") void TestFunction();
+	public:
+		//UPROPERTY(EditAnywhere, BlueprintReadWrite) int32 testInt;
+		UFUNCTION(BlueprintCallable, Category = "CustomJson") static void TestFunction();
 };

@@ -2,23 +2,19 @@
 
 
 #include "QA_Json.h"
-#include "JsonObjectConverter.h"
+//#include "JsonObjectConverter.h"
 #include "Misc/FileHelper.h"
 
-QA_Json::QA_Json()
+
+void UQA_Json::TestFunction()
 {
+    UE_LOG(LogTemp, Warning, TEXT("QA_Json, TestFunction print"));
 }
 
-QA_Json::~QA_Json()
-{
-}
 
-/*
-void AQA_Json::TestFunction()
-{
-    
-}
-*/
+
+
+
 
 /*
 // 1. Define your data structure
