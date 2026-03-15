@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{5C108DD4-4724-2A1F-ADBB-24903A806B26}",
+	"EngineAssociation": "{5C6CF19C-4EC8-A7EF-EE00-8A812D7FCDFA}",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -18,6 +18,18 @@
 		{
 			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
+		},
+		{
+			"Name": "Wwise",
+			"Enabled": false
+		},
+		{
+			"Name": "WwiseNiagara",
+			"Enabled": false
+		},
+		{
+			"Name": "WwiseSoundEngine",
+			"Enabled": false
 		}
 	]
 }
