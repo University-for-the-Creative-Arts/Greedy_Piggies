@@ -1,12 +1,18 @@
 ﻿#include "JsonDataThingy.h"
+
+#include <cmath>
+
 #include "JsonObjectConverter.h"
 #include "Misc/FileHelper.h"
-
+#include "GenericPlatform/GenericPlatformMisc.h"
+#include "HAL/PlatformMemory.h"
+#include "RHI.h"
 
 void UJsonDataThingy::JsonMakerAndSender(const FCombinedUserData combinedUserData)
 {
 	FString JsonString;
 	FString savePath = combinedUserData.fileName;
+	
 	if (FJsonObjectConverter::UStructToJsonObjectString(combinedUserData, JsonString))
 	{
 		FFileHelper::SaveStringToFile(JsonString, *savePath);
@@ -19,6 +25,31 @@ void UJsonDataThingy::JsonMakerAndSender(const FCombinedUserData combinedUserDat
 	void SendJson();
 }
 
+FUserHardwareData UJsonDataThingy::GetUserHardware()
+{
+	FUserHardwareData userHardwareData;
+	
+	userHardwareData.CPUBrand = FPlatformMisc::GetCPUBrand();
+	userHardwareData.CPUCoreCount = FPlatformMisc::NumberOfCores();
+	
+	if (GDynamicRHI)
+	{
+		userHardwareData.GPUBrand = GRHIAdapterName;
+		userHardwareData.renderingPlatform = LegacyShaderPlatformToShaderFormat(GMaxRHIShaderPlatform).ToString();
+	}
+	
+	FPlatformMemoryStats memoryStats = FPlatformMemory::GetStats();
+	float RAM = static_cast<float>(memoryStats.TotalPhysical) / (1024.0f * 1024.0f * 1024.0f);
+	userHardwareData.totalPhysicalRAM_GB = std::floor(RAM * 10) / 10.0f;
+	
+	//userHardwareData.OSName = FPlatformMisc::GetOSVersion();
+	//userHardwareData.OSVersion = FPlatformMisc::GetOSVersion();
+	
+	FPlatformMisc::GetOSVersions(userHardwareData.OSVersion, userHardwareData.OSVersion);
+	
+	return userHardwareData;
+}
+
 void SendJson()
 {
 	//Send the JSON file to the server here.
@@ -28,38 +59,3 @@ void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool
 {
 	
 }
-
-
-
-//FString SavePath = FPaths::ProjectSavedDir() + TEXT("SaveData.json");
-
-/*
-// 1. Define your data structure
-USTRUCT(BlueprintType)
-struct FMyGameData
-{
-	GENERATED_BODY()
-
-	UPROPERTY()
-	FString PlayerName;
-
-	UPROPERTY()
-	int32 Score;
-};
-
-// 2. Serialize and Save at Runtime
-void SaveJson()
-{
-	FMyGameData Data;
-	Data.PlayerName = "Hero";
-	Data.Score = 1500;
-
-	FString JsonString;
-	// Industry standard: Convert Struct -> JSON String
-	if (FJsonObjectConverter::UStructToJsonObjectString(Data, JsonString))
-	{
-		FString SavePath = FPaths::ProjectSavedDir() + TEXT("SaveData.json");
-		FFileHelper::SaveStringToFile(JsonString, *SavePath);
-	}
-}
-*/

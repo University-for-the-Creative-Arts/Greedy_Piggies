@@ -13,7 +13,7 @@ class GREEDY_PIGGIES_API UJsonDataThingy : public UBlueprintFunctionLibrary
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "HowToMakeAJson") static void JsonMakerAndSender(const FCombinedUserData combinedUserData);
-	
+	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "HowToMakeAJson") static FUserHardwareData GetUserHardware();
 private:
 	void SendJson();
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
