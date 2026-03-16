@@ -7053,6 +7053,7 @@ FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout
 [2026.03.16-10.56.55:005][758]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
 [2026.03.16-10.56.55:006][758]AssetCheck: /Game/Level_Blockout_DylanM/DM_Final_Blockout Validating asset
 [2026.03.16-10.56.55:024][758]LogSourceControl: Display: Uncontrolled Changelist persistency file saved ../../../../../../Users/2326296/Documents/GitHub/Greedy_Piggies/Saved/SourceControl/UncontrolledChangelists.json
+<<<<<<< HEAD
 [2026.03.16-10.58.11:870][155]LogSlate: Window 'Color Picker' being destroyed
 [2026.03.16-10.58.30:275][ 77]LogSlate: Window 'Color Picker' being destroyed
 [2026.03.16-10.58.52:760][295]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 649.336548
@@ -32949,3 +32950,5 @@ FPackageName: Skipped package /Game/Level_Blockout_DylanM/Blueprints_DM_Blockout
 [2026.03.16-11.51.45:398][ 48]AssetCheck: /Game/PrototypeBlueprints/BP_FirstPersonCharacter_HarryTesting Validating asset
 [2026.03.16-11.51.45:398][ 48]AssetCheck: /Game/PrototypeBlueprints/BP_Hand Validating asset
 [2026.03.16-11.51.45:421][ 48]LogSourceControl: Display: Uncontrolled Changelist persistency file saved ../../../../../../Users/2326296/Documents/GitHub/Greedy_Piggies/Saved/SourceControl/UncontrolledChangelists.json
+=======
+>>>>>>> parent of e41650a (made card creation run on RPC)
