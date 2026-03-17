@@ -5,15 +5,15 @@
 #include "FCombinedUserData.generated.h"
 
 
-USTRUCT(BlueprintType)
+USTRUCT()
 struct FCombinedUserData
 {
 	GENERATED_BODY()
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString fileName;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FString timePlayed;
+	UPROPERTY(EditAnywhere) FString fileName;
+	UPROPERTY(EditAnywhere) FString timePlayed;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FUserHardwareData userHardwareData;
+	UPROPERTY(EditAnywhere) FUserHardwareData userHardwareData;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite) FCombined_QA combined_QA;
+	UPROPERTY(EditAnywhere) FCombined_QA combined_QA;
 };

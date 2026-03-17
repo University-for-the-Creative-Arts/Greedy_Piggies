@@ -12,9 +12,14 @@ class GREEDY_PIGGIES_API UJsonDataThingy : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintCallable, Category = "HowToMakeAJson") static void JsonMakerAndSender(const FCombinedUserData combinedUserData);
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "HowToMakeAJson") static FUserHardwareData GetUserHardware();
+	UFUNCTION(BlueprintCallable, Category = "HowToMakeAJson") static void JsonMakerAndSender(float secondsPlayed, const FCombined_QA combined_QA);
+		
+protected:
+	
 private:
+	static FUserHardwareData GetUserHardware();
 	void SendJson();
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
+	FString static FileNameMaker();
+	FString static TimePlayedFormatter(float secondsPlayed);
 };
