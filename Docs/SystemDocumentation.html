@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Card Game System Documentation</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="card-game-system-documentation">Card Game System Documentation</h1>
+<p>This document outlines the core system classes derived from the project's <code>.COPY</code> files. It follows the provided documentation template structure for each major component.</p>
+<hr>
+<h1 id="bp_dealer-documentation">BP_Dealer Documentation</h1>
+<h2 id="overview">Overview</h2>
+<ul>
+<li><strong>Class Type:</strong> Actor (Blueprint)</li>
+<li><strong>Parent Class:</strong> Actor</li>
+<li><strong>Description:</strong> The central manager for the game session. It handles the deck, dealing cards, managing turn order (Player vs AI), auditing gameplay (truth/bluff checks), and determining the winner.</li>
+</ul>
+<hr>
+<h2 id="core-logic-and-gameplay-systems">Core Logic and Gameplay Systems</h2>
+<h3 id="logic-flow">Logic Flow</h3>
+<ul>
+<li><strong>Initialization:</strong>
+<ul>
+<li><strong>StartGame:</strong> Initializes the game state, likely shuffling the deck and resetting scores.</li>
+<li><strong>StartingDeal:</strong> Distributes the initial set of cards to all <code>BP_Hand</code> actors (Player and AI).</li>
+</ul>
+</li>
+<li><strong>Main Loop:</strong>
+<ul>
+<li><strong>Turn:</strong> Manages the active player's phase.</li>
+<li><strong>AI_Turn:</strong> Executes logic for the AI opponent to select and play cards.</li>
+<li><strong>AuditPhase:</strong> Triggered when a player challenges the previous move. Evaluates <code>Truth</code> and assigns penalties.</li>
+<li><strong>EndOfGame:</strong> Checks for win conditions (e.g., empty hand) and declares the winner.</li>
+</ul>
+</li>
+<li><strong>Dependencies:</strong>
+<ul>
+<li><strong>BP_Hand:</strong> Stores card data for each player.</li>
+<li><strong>BP_AIPlayer:</strong> The opponent actor.</li>
+<li><strong>BP_FirstPersonCharacter_HarryTesting:</strong> The player character.</li>
+<li><strong>DT_Deck (DataTable):</strong> Source of all card definitions.</li>
+<li><strong>S_Cards (Struct):</strong> Data structure for card properties.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="variables-and-data">Variables and Data</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Default Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>fullDeck</strong></td>
+<td style="text-align:left">DataTable</td>
+<td style="text-align:left">DT_Deck</td>
+<td style="text-align:left">The master list of all cards in the game.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>hands</strong></td>
+<td style="text-align:left">BP_Hand Array</td>
+<td style="text-align:left">Empty</td>
+<td style="text-align:left">References to the player and AI hand containers.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>currentPlayer</strong></td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">Index of the player currently taking their turn.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>player</strong></td>
+<td style="text-align:left">BP_Character</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left">Reference to the local player character.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>AI_Player</strong></td>
+<td style="text-align:left">BP_AIPlayer</td>
+<td style="text-align:left">None</td>
+<td style="text-align:left">Reference to the AI opponent.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>CardPoolRow</strong></td>
+<td style="text-align:left">Int Array</td>
+<td style="text-align:left">Empty</td>
+<td style="text-align:left">Tracks available cards (likely row indices from DT_Deck).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>auditing</strong></td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">False</td>
+<td style="text-align:left">State flag indicating if an audit is in progress.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Truth</strong></td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">False</td>
+<td style="text-align:left">Tracks if the last play was truthful or a bluff.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>declaredScore</strong></td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">The value the player claims to have played.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>realScore</strong></td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">The actual value of the cards played.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="blueprint-functions-and-events">Blueprint Functions and Events</h2>
+<h3 id="public-functions-and-events">Public Functions and Events</h3>
+<ul>
+<li><strong>StartGame</strong>: Begins the session setup.</li>
+<li><strong>Dealing Logic</strong>:
+<ul>
+<li><strong>StartingDeal</strong>: Initial distribution of cards.</li>
+<li><strong>DealCard</strong>: Moves a card from the pool to a target hand.</li>
+<li><strong>RefillHand</strong>: Replenishes a player's hand if empty/low.</li>
+</ul>
+</li>
+<li><strong>Turn Management</strong>:
+<ul>
+<li><strong>Turn</strong>: Logic for the current player's turn start.</li>
+<li><strong>AI_Turn</strong>: Logic for the AI's decision making.</li>
+<li><strong>EndOfGame</strong>: Clean up and win announcements.</li>
+</ul>
+</li>
+<li><strong>Audit System</strong>:
+<ul>
+<li><strong>AuditPhase</strong>: Evaluates the validity of the last play.</li>
+<li><strong>AuditInput</strong>: Input handler for triggering an audit.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="integration-and-setup">Integration and Setup</h2>
+<ol>
+<li><strong>Placement:</strong> Place one instance of <code>BP_Dealer</code> in the level.</li>
+<li><strong>Configuration:</strong> Ensure <code>fullDeck</code> is set to <code>DT_Deck</code>.</li>
+<li><strong>Usage:</strong> The <code>BP_FirstPersonCharacter</code> must store a reference to this actor to call playing functions.</li>
+</ol>
+<hr>
+<h1 id="bp_firstpersoncharacter_harrytesting-documentation">BP_FirstPersonCharacter_HarryTesting Documentation</h1>
+<h2 id="overview-1">Overview</h2>
+<ul>
+<li><strong>Class Type:</strong> Character</li>
+<li><strong>Description:</strong> The playable character. Manages player input, playing cards from the hand, and interacting with the UI/Dealer.</li>
+</ul>
+<hr>
+<h2 id="core-logic-and-gameplay-systems-1">Core Logic and Gameplay Systems</h2>
+<h3 id="logic-flow-1">Logic Flow</h3>
+<ul>
+<li><strong>Input Handling:</strong>
+<ul>
+<li>Standard movement (Jump, Look, Move).</li>
+<li><strong>Card Interaction:</strong> Logic to select cards (<code>ChangeSelectedCard</code>), play them (<code>PlayCards</code>), and declare values (<code>UpdateScore</code>).</li>
+</ul>
+</li>
+<li><strong>Dependencies:</strong>
+<ul>
+<li><strong>BP_Dealer:</strong> To submit turns and audits.</li>
+<li><strong>BP_Hand:</strong> To view and retrieve owned cards.</li>
+<li><strong>BP_CardBase:</strong> To spawn visual representations of cards (<code>cardActors</code>).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="variables-and-data-1">Variables and Data</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Dealer</strong></td>
+<td style="text-align:left">BP_Dealer</td>
+<td style="text-align:left">Reference to the main game manager.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>hand</strong></td>
+<td style="text-align:left">BP_Hand</td>
+<td style="text-align:left">Reference to this player's hand data.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>selectedCard</strong></td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">Index of the currently highlighted card in the UI/Hand.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>chosenCards</strong></td>
+<td style="text-align:left">Int Array</td>
+<td style="text-align:left">List of cards selected to be played in the current turn.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>score</strong></td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">The card value the player receives/tracks.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>cardActors</strong></td>
+<td style="text-align:left">BP_CardBase Array</td>
+<td style="text-align:left">3D actors representing the cards in hand.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="blueprint-functions-and-events-1">Blueprint Functions and Events</h2>
+<h3 id="custom-events">Custom Events</h3>
+<ul>
+<li><strong>PlayCards</strong>: Submits the <code>chosenCards</code> to the Dealer.</li>
+<li><strong>UpdateScore</strong>: Updates local score display/tracking.</li>
+<li><strong>updateCards</strong>: Refreshes the visual hand display (spawning/destroying <code>cardActors</code>).</li>
+<li><strong>ChangeSelectedCard</strong>: Cycles through cards in the hand.</li>
+<li><strong>Input Actions</strong>: <code>IA_Move</code>, <code>IA_Jump</code>, <code>IA_Look</code>, <code>IA_MouseLook</code>.</li>
+</ul>
+<hr>
+<h1 id="bp_hand-documentation">BP_Hand Documentation</h1>
+<h2 id="overview-2">Overview</h2>
+<ul>
+<li><strong>Class Type:</strong> Actor / Object</li>
+<li><strong>Description:</strong> A data container for a player's hand. It stores the list of cards held by a participant (Player or AI).</li>
+</ul>
+<hr>
+<h2 id="variables-and-data-2">Variables and Data</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>hand</strong></td>
+<td style="text-align:left">Int Array</td>
+<td style="text-align:left">List of card IDs (or values) currently held.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>score</strong></td>
+<td style="text-align:left">Integer</td>
+<td style="text-align:left">Current score associated with this hand.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="blueprint-functions">Blueprint Functions</h2>
+<ul>
+<li><strong>AddToHand</strong>: Adds a card ID to the <code>hand</code> array.</li>
+<li><strong>RemoveFromHand</strong>: Removes a specific card ID from the array.</li>
+</ul>
+<hr>
+<h1 id="data-structures">Data Structures</h1>
+<h2 id="s_cards-struct">S_Cards (Struct)</h2>
+<p>Defines the properties of a single card.</p>
+<ul>
+<li><strong>CardNumber (String):</strong> Display name (e.g., &quot;Ace&quot;, &quot;Two&quot;).</li>
+<li><strong>CardSuit (String):</strong> Suit (e.g., &quot;Hearts&quot;, &quot;Spades&quot;).</li>
+<li><strong>cardValue (Int):</strong> Numerical value for gameplay logic.</li>
+</ul>
+<h2 id="dt_deck-datatable">DT_Deck (DataTable)</h2>
+<ul>
+<li><strong>Row Structure:</strong> <code>S_Cards</code></li>
+<li><strong>Description:</strong> Static database defining the standard deck of cards used by <code>BP_Dealer</code> to populate the game.</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
