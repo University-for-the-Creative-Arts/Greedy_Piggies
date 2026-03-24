@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BP_ArchetypeComponent Documentation</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f6f7fb;
+      margin: 0;
+      padding: 32px;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3 {
+      color: #111827;
+      margin-top: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.2rem;
+      border-bottom: 3px solid #e5e7eb;
+      padding-bottom: 12px;
+    }
+    h2 {
+      font-size: 1.45rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    h3 {
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0.7em 0;
+    }
+    ul, ol {
+      margin: 0.6em 0 1em 1.4em;
+    }
+    li {
+      margin: 0.35em 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 24px 0;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f3f4f6;
+      font-weight: bold;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 0.95em;
+    }
+    .mono {
+      white-space: pre-wrap;
+      font-family: Consolas, Monaco, monospace;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 14px;
+      margin: 16px 0;
+    }
+    .note {
+      background: #fff7ed;
+      border-left: 4px solid #f59e0b;
+      padding: 14px 16px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>BP_ArchetypeComponent Documentation</h1>
+
+    <h2>Overview</h2>
+    <p><strong>Class Type:</strong> ActorComponent</p>
+    <p><strong>Parent Class:</strong> ActorComponent</p>
+    <p><strong>Description:</strong> <code>BP_ArchetypeComponent</code> is a modular cosmetic character identity system used by the player character in <em>Greedy Piggies</em>. Its purpose is to apply the correct archetype presentation data to a player at runtime without changing gameplay logic. This includes swapping the player mesh, returning the correct animation montages for gameplay events, and storing archetype-specific voice references. The component exists to keep the main Player Blueprint lightweight and to let designers edit archetypes using Data Assets rather than gameplay code.</p>
+
+    <h2>Core Logic and Gameplay Systems</h2>
+    <p>This component does not control gameplay mechanics such as card logic, scoring, movement, or authority. It only manages the player's cosmetic identity.</p>
+    <p>The system is built around four archetypes:</p>
+    <ul>
+      <li>Dictator</li>
+      <li>Entrepreneur</li>
+      <li>Nepo Piggy</li>
+      <li>Nobody</li>
+    </ul>
+    <p>Each archetype is represented by a Data Asset containing references to:</p>
+    <ul>
+      <li>Character mesh</li>
+      <li>Card play montage</li>
+      <li>Card draw montage</li>
+      <li>Win montage</li>
+      <li>Lose montage</li>
+      <li>Audit montage</li>
+      <li>Shock montage</li>
+      <li>Win Voice</li>
+      <li>Lose Voice</li>
+      <li>Lose audit voice</li>
+      <li>Win audit voice</li>
+      <li>Shop access voice</li>
+    </ul>
+    <p>At runtime, the player’s selected archetype is stored in <code>BP_PlayerState</code>. The Player Character reads this value and passes it to <code>BP_ArchetypeComponent</code>, which then loads and applies the corresponding Data Asset.</p>
+
+    <h3>Logic Flow</h3>
+    <p><strong>Initialization:</strong> This component does not require heavy BeginPlay logic by itself. It is expected that the owning Player Character calls a refresh function, such as <code>RefreshArchetypeFromPlayerState()</code>, after PlayerState becomes valid. The component then receives an archetype enum and applies the relevant data.</p>
+    <p><strong>Main Loop:</strong> This component is not designed around Tick-based behaviour. It is event-driven. It responds when:</p>
+    <ul>
+      <li>The player initially spawns</li>
+      <li>The selected archetype is changed</li>
+      <li>The replicated PlayerState variable updates on clients</li>
+    </ul>
+    <p><strong>Dependencies:</strong></p>
+    <ul>
+      <li><code>BP_FirstPersonPlayer</code> (or equivalent owning player character)</li>
+      <li><code>BP_Card

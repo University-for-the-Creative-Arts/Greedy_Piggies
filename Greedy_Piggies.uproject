@@ -18,6 +18,18 @@
 		{
 			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
+		},
+		{
+			"Name": "Wwise",
+			"Enabled": false
+		},
+		{
+			"Name": "WwiseNiagara",
+			"Enabled": false
+		},
+		{
+			"Name": "WwiseSoundEngine",
+			"Enabled": false
 		}
 	]
 }
