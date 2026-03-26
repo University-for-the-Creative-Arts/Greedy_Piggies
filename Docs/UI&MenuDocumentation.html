@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>UI &amp; Menus Dev-Log&colon; Greedy Piggies</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="ui--menus-dev-log-greedy-piggies">UI &amp; Menus Dev-Log: Greedy Piggies</h1>
+<h3 id="uiux-updates--economic-backend-progress">UI/UX Updates &amp; Economic Backend Progress</h3>
+<p>Progress on the Greedy Piggies interface, refining how players navigate between the game's menus and the economic systems. The goal has been moving away from &quot;placeholder grey-box&quot; mode and actually hooking our financial logic into the visual elements to make the transition between standard gameplay and the &quot;Financial Web&quot; UI feel natural and easy to read. It’s a bit of a balancing act between making it look like a cohesive game and not breaking the underlying math.</p>
+<hr>
+<h2 id="️-i-the-frontend-player-experience--navigation">🖥️ I. The Frontend: Player Experience &amp; Navigation</h2>
+<p>Our menu systems are designed with a hierarchical flow, ensuring the player can transition from the main stage to the granular settings without losing context.</p>
+<h3 id="1-main-entry--global-states">1. Main Entry &amp; Global States</h3>
+<p>We’ve structured the menu system to maintain a clear hierarchy, allowing players to move from the main screen to settings without losing their place. Main Entry &amp; Global States: The Main Menu provides direct access to local and online modes. We have also unified the Pause and Options menus to ensure a consistent, unobtrusive overlay that doesn't distract from the game state.</p>
+<ul>
+<li>We’ve implemented a standard Set Input Mode UIOnly logic when the pause menu triggers. This ensures the player isn't accidentally clicking the world while navigating menus.</li>
+<li>We’re using a standard parent-child structure for the menus. The main menu is a single UserWidget</li>
+<li>We’ve hooked up the UI to the Enhanced Input system. As you can see in the screenshot below, we’re currently mapping user interactions to the EnhancedActionKeyMappings</li>
+</ul>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/MainMenu.png" alt="MainMenu"></p>
+<p><em>Figure 1.1: The primary landing hub featuring the Greedy Piggies branding and core play-mode selection.</em></p>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/PauseMenu.png" alt="PauseMenu"></p>
+<p><em>Figure 1.2: Standardized Pause Overlay for real-time game state management.</em></p>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/OptionsMenu.png" alt="OptionsMenu"></p>
+<p><em>Figure 1.3: Sub-menu architecture for Control mapping and audio/visual toggles.</em></p>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/GamepadControlsMenu.png" alt="OptionsMenu"></p>
+<p><em>Figure 1.4: The current Gamepad remapping screen. We are binding UI buttons to the input context so the player can verify their layout on the fly.</em></p>
+<hr>
+<h2 id="-ii-the-marketplace-shop--stock-ecosystem">📈 II. The Marketplace: Shop &amp; Stock Ecosystem</h2>
+<p>The core of Greedy Piggies revolves around two distinct &quot;websites&quot; within the game’s UI: the Shop and the Stock Market.</p>
+<h3 id="1-procedural-shopfront">1. Procedural Shopfront</h3>
+<p>The Shop uses a modular card-based system. Currently, the WIP layout supports a three-card display where players can purchase upgrades or assets.</p>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/ShopMenuWIP.png" alt="PauseMenu"></p>
+<p><em>Figure 2.1: Early layout for the Shop Website, utilizing a Tab-based navigation system.</em></p>
+<h3 id="2-the-stock-exchange-ipm">2. The Stock Exchange (IPM)</h3>
+<p>The Stock Market is our most data-heavy UI component. It features a list of tradable entities (such as the International PigMachine Corporation) and a dedicated graph area for visualizing market volatility.</p>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/StocksMenu.png" alt="PauseMenu"></p>
+<p><em>Figure 2.2: Advanced Stock UI featuring real-time &quot;Invest&quot; buttons and a data-visualization canvas.</em></p>
+<hr>
+<h2 id="️-iii-technical-architecture-blueprint-breakdown">⚙️ III. Technical Architecture (Blueprint Breakdown)</h2>
+<p>Behind the visuals, we have implemented a robust event-driven system to handle the complexities of a simulated economy.</p>
+<h3 id="1-dynamic-content--rss-feeds">1. Dynamic Content &amp; RSS Feeds</h3>
+<p>To add flavor and market context, we’ve built a scrolling RSS News Feed. This system pulls random headlines and cycles them through an animated widget, keeping the player informed of &quot;market shifts.&quot;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:left">Implementation</th>
+<th style="text-align:left">Goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>RSS Feed</strong></td>
+<td style="text-align:left">Random Array + Animation States</td>
+<td style="text-align:left">Immersive flavor text &amp; updates</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Input Mode</strong></td>
+<td style="text-align:left">Game and UI Toggle</td>
+<td style="text-align:left">Ensure mouse focus during financial tasks</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Stock Gen</strong></td>
+<td style="text-align:left">Shuffle + Clear List</td>
+<td style="text-align:left">Prevents duplicate stocks in a single round</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/Code3.png" alt="PauseMenu"></p>
+<p><em>Figure 3.1: RSS Feed logic and UI Input Mode management.</em></p>
+<h3 id="2-financial-logic--investment-ratios">2. Financial Logic &amp; Investment Ratios</h3>
+<p>We’ve developed a specialized math flow to handle investments. This includes a <code>BP_StockObject</code> constructor that calculates value based on a base ratio against a 100,000.0 variable.</p>
+<ul>
+<li><strong>Card Interaction:</strong> When a card is clicked, the system breaks the <code>S_CardData</code> struct and updates the character's score and hand.</li>
+<li><strong>Market Shuffle:</strong> Every round, the market is purged and re-populated with fresh entries from the <code>AllStockArray</code>.</li>
+</ul>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/ShopCode.png" alt="PauseMenu"></p>
+<p><em>Figure 3.2: Card selection binding and player data synchronization.</em></p>
+<p><img src="https://media.githubusercontent.com/media/University-for-the-Creative-Arts/Greedy_Piggies/staging/Docs/UI%20Screenshots/StocksCode.png" alt="PauseMenu"></p>
+<p><em>Figure 3.3: Stock generation shuffle logic and Investment Ratio calculations.</em></p>
+<hr>
+<h2 id="-iv-development-roadmap">🚀 IV. Development Roadmap</h2>
+<p>With the core UI containers and backend data structures in place, our next sprint will focus on:</p>
+<ul>
+<li><strong>Polishing the Graphing Tool:</strong> Transitioning the blue canvas in the Stock UI to a functional, real-time line graph.</li>
+<li><strong>SFX Integration:</strong> Adding &quot;cha-ching&quot; cues for successful investments and purchases.</li>
+<li><strong>Visual Polish:</strong> Replacing the grey-box placeholders in the Options menu with themed pig-vegas assets.</li>
+</ul>
+
+            
+            
+        </body>
+        </html>

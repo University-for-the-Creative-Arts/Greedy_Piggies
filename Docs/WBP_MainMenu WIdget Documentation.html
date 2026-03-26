@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title># WBP_MainMenu Widget Documentation</title>
+	<style>
+		/* Basic styles for readability */
+		body {
+			font-family: sans-serif;
+			max-width: 800px;
+			margin: 2em auto;
+			padding: 0 1em;
+			line-height: 1.6;
+		}
+		img { max-width: 100%; height: auto; }
+		pre { background-color: #f4f4f4; padding: 1em; overflow-x: auto; }
+		code { font-family: monospace; }
+	</style>
+</head>
+<body>
+	<h1>WBP_MainMenu Widget Documentation</h1>
+<h2>Overview</h2>
+<ul>
+<li><strong>Designer</strong>: Michael Wintringham, 2304751</li>
+<li><strong>Class type</strong>: Widget Blueprint</li>
+<li><strong>Parent class</strong>: User widget</li>
+<li><strong>Description</strong>: The main menu widget that the player use’s to navigate through the game. The first of the menu’s the player see’s upon opening the game.</li>
+</ul>
+<h2><strong>Core Logic and Gameplay Systems</strong></h2>
+<p>This class operate during runtime by creating the widget during initialisation and setting it as the focus widget for the player. From there it functions by simply detecting the inputs to naviagte the menu before running certain custom events, toggling visibility and changing the games input mode dependant on which buttons are pressed.</p>
+<h3><strong>Logic Flow</strong></h3>
+<ul>
+<li><strong>Initialisation</strong>: On Construct the widget first gets the players controller and sets the input mode to be UI only to avoid the player interacting with the level at all. The focused widget is also the “Online Button”, meaning this is where the players cursor starts in the menu. After that all it does is set it so the mouse cursor is visible on the screen for the player to see.</li>
+<li><strong>Main Loop</strong>: The primary input handling of this blueprint is through the mouse cursor with the logic being handled by “OnHovered”, “OnUnhovered” and “OnClicked” events. On Hovered and Unhovered are used by the Local and Online buttons to show extra button options such as player amounts or whether to host or join a game. On Clicked fires various events depending on the button such as unparenting the menu and opening a new one when games are joined/hosted, showing or hiding the game manual or quitting the game all together.</li>
+<li><strong>Dependencies</strong>: Currently WBP_ShopStocks is the only other class called by this blueprint however that may change in the future</li>
+</ul>
+<h2><strong>Blueprint Functions and Events</strong></h2>
+<h3><strong>Public functions</strong></h3>
+<ul>
+<li>Currently no public or internal functions are used within this blueprint</li>
+</ul>
+<h3><strong>Custom Events and Dispatchers</strong></h3>
+<ul>
+<li>Currently no custom events or dispatchers are used within this blueprint</li>
+</ul>
+<h2><strong>Interfaces and Communication</strong></h2>
+<ul>
+<li><strong>Implemented interfaces</strong>: Currently this blueprint does not impliment or use and blueprint interfaces</li>
+<li><strong>Inter-Class Communication</strong>: Currently the only Inter-class communication this blueprint uses is constructing another widget upon a “OnClicked” event. When “On clicked (Button 4)” is called it constructs the bleuprint “WBP_Shop Stocks”</li>
+</ul>
+<h2><strong>Intergration and Setup</strong></h2>
+<ul>
+<li><strong>Placement</strong>: This actor should be implimented as the main menu being constructed as one of the first things the player has in the game.</li>
+<li><strong>Configuration</strong>: No configuration in the detials panel is needed.</li>
+<li><strong>Usage</strong>: This logic is called through constructing the widget then adding it to the viewport.</li>
+</ul>
+<h2><strong>Performance and Constraints</strong>:</h2>
+<ul>
+<li><strong>Tick</strong>: Tick is not enabled for this blueprint</li>
+<li><strong>Optimisation</strong>: No optimisation issues are known with this blueprint</li>
+<li><strong>Known Issues</strong>: There are currently no known issues with this blueprint</li>
+</ul>
+
+</body>
+</html>
