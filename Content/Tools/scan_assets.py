@@ -3,10 +3,15 @@ import csv
 import os
 from datetime import datetime
 
-MAX_TRIANGLES = 50000
-MAX_TEXTURE_SIZE = 4096
+MAX_TRIANGLES = 10000
+MAX_TEXTURE_SIZE = 2048
 MIN_LODS = 2
-SCAN_PATH = "/All/Game/DropOff"
+SCAN_PATH = "/Game/DropOff"
+
+def get_load_path(asset_data):
+    pkg = str(asset_data.package_path)
+    name = str(asset_data.asset_name)
+    return f"{pkg}/{name}.{name}"
 
 def scan_meshes():
     flagged = []
@@ -16,10 +21,13 @@ def scan_meshes():
     mesh_assets = asset_registry.get_assets_by_class(mesh_class_path)
 
     for asset_data in mesh_assets:
-        if not str(asset_data.package_path).startswith(SCAN_PATH):
+        pkg_path = str(asset_data.package_path)
+
+        if not pkg_path.startswith(SCAN_PATH):
             continue
 
-        mesh = unreal.EditorAssetLibrary.load_asset(str(asset_data.object_path))
+        load_path = get_load_path(asset_data)
+        mesh = unreal.EditorAssetLibrary.load_asset(load_path)
         if not isinstance(mesh, unreal.StaticMesh):
             continue
 
@@ -28,7 +36,7 @@ def scan_meshes():
             flagged.append({
                 "type": "MESH",
                 "name": str(asset_data.asset_name),
-                "path": str(asset_data.package_path),
+                "path": pkg_path,
                 "issue": f"{triangle_count:,} triangles (limit: {MAX_TRIANGLES:,})"
             })
 
@@ -37,7 +45,7 @@ def scan_meshes():
             flagged.append({
                 "type": "LOD",
                 "name": str(asset_data.asset_name),
-                "path": str(asset_data.package_path),
+                "path": pkg_path,
                 "issue": f"Only {lod_count} LOD level(s) found (minimum recommended: {MIN_LODS})"
             })
 
@@ -51,10 +59,13 @@ def scan_textures():
     texture_assets = asset_registry.get_assets_by_class(texture_class_path)
 
     for asset_data in texture_assets:
-        if not str(asset_data.package_path).startswith(SCAN_PATH):
+        pkg_path = str(asset_data.package_path)
+
+        if not pkg_path.startswith(SCAN_PATH):
             continue
 
-        texture = unreal.EditorAssetLibrary.load_asset(str(asset_data.object_path))
+        load_path = get_load_path(asset_data)
+        texture = unreal.EditorAssetLibrary.load_asset(load_path)
         if not isinstance(texture, unreal.Texture2D):
             continue
 
@@ -65,13 +76,12 @@ def scan_textures():
             flagged.append({
                 "type": "TEXTURE",
                 "name": str(asset_data.asset_name),
-                "path": str(asset_data.package_path),
+                "path": pkg_path,
                 "issue": f"{width}x{height}px (limit: {MAX_TEXTURE_SIZE}px)"
             })
 
     return flagged
 
-# Markdown file creator
 def generate_markdown(flagged_assets, script_dir):
     meshes   = [a for a in flagged_assets if a["type"] == "MESH"]
     textures = [a for a in flagged_assets if a["type"] == "TEXTURE"]
@@ -82,7 +92,7 @@ def generate_markdown(flagged_assets, script_dir):
 
     lines = []
 
-    lines.append("# UE5 Optimisation Scan Report")
+    lines.append("# Scan Report")
     lines.append(f"\n> Scanned on {timestamp}  ")
     lines.append(f"> Scan path: `{SCAN_PATH}`  ")
     lines.append(f"> Thresholds: `{MAX_TRIANGLES:,}` triangles · `{MAX_TEXTURE_SIZE}px` textures · `{MIN_LODS}` minimum LODs")
@@ -122,7 +132,6 @@ def generate_markdown(flagged_assets, script_dir):
         lines.append("|---|---|---|")
         for a in lods:
             lines.append(f"| `{a['name']}` | `{a['path']}` | {a['issue']} |")
-
 
     md_path = os.path.join(script_dir, "scan_results.md")
     with open(md_path, "w", encoding="utf-8") as f:
