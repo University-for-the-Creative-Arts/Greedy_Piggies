@@ -47,7 +47,8 @@ SourceArt/**/.png
 SourceArt//.tga
 
 Binary Files
-Binaries/
+!Binaries/
+
 !Plugins//Binaries/*
 
 Builds
@@ -73,3 +74,4 @@ Intermediate/*
 
 Cache files for the editor to use
 DerivedDataCache/*
+Binaries/Win64/Greedy_Piggies.pdb
