@@ -1,8 +1,15 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{66919654-43F7-A2F5-AD9E-F797792F5E7D}",
+	"EngineAssociation": "{1848E7A1-4252-08D8-2882-6B871B5A1034}",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "Greedy_Piggies",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
@@ -18,14 +25,6 @@
 		{
 			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
-		},
-		{
-			"Name": "WwiseNiagara",
-			"Enabled": false
-		},
-		{
-			"Name": "Wwise",
-			"Enabled": false
 		}
 	]
 }
