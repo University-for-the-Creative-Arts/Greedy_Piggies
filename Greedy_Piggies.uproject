@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{77901C66-4BAE-B2EF-2243-B0BC30C43760}",
+	"EngineAssociation": "5.6",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -20,15 +20,11 @@
 			"Enabled": true
 		},
 		{
-			"Name": "Wwise",
-			"Enabled": false
-		},
-		{
 			"Name": "WwiseNiagara",
 			"Enabled": false
 		},
 		{
-			"Name": "WwiseSoundEngine",
+			"Name": "Wwise",
 			"Enabled": false
 		}
 	]

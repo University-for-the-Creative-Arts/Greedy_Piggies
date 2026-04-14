@@ -48,7 +48,7 @@ SourceArt//.tga
 
 Binary Files
 Binaries/
-Plugins//Binaries/*
+!Plugins//Binaries/*
 
 Builds
 Build/*
@@ -69,7 +69,13 @@ Saved/
 
 Compiled source files for the engine to use
 Intermediate/*
-Plugins/*/Intermediate/
+!Plugins/*/Intermediate/
 
 Cache files for the editor to use
 DerivedDataCache/*
+Binaries/Win64/Greedy_Piggies.pdb
+Binaries/Win64/Greedy_Piggies.exp
+Binaries/Win64/Greedy_Piggies.target
+Binaries/Win64/Greedy_PiggiesEditor.target
+Binaries/Win64/UnrealEditor-Greedy_Piggies.pdb
+Binaries/Win64/UnrealEditor.modules
