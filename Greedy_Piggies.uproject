@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{1848E7A1-4252-08D8-2882-6B871B5A1034}",
+	"EngineAssociation": "{79F981F4-452D-CD08-C184-D29E30903EFD}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -25,7 +25,7 @@
 		{
 			"Name": "OnlineSubsystemSteam",
 			"Enabled": true
-        },
+		},
 		{
 			"Name": "WwiseNiagara",
 			"Enabled": false
@@ -33,6 +33,6 @@
 		{
 			"Name": "Wwise",
 			"Enabled": false
-        }
+		}
 	]
 }
