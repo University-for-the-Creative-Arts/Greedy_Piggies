@@ -20,13 +20,13 @@ class UObject;
 class UStartSessionCallbackProxyAdvanced;
 
 // ********** Begin Class UStartSessionCallbackProxyAdvanced ***************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_RPC_WRAPPERS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execStartAdvancedSession);
 
 
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_UStartSessionCallbackProxyAdvanced_NoRegister();
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_INCLASS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_INCLASS \
 private: \
 	static void StaticRegisterNativesUStartSessionCallbackProxyAdvanced(); \
 	friend struct Z_Construct_UClass_UStartSessionCallbackProxyAdvanced_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(UStartSessionCallbackProxyAdvanced)
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_STANDARD_CONSTRUCTORS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	ADVANCEDSESSIONS_API UStartSessionCallbackProxyAdvanced(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UStartSessionCallbackProxyAdvanced) \
@@ -49,13 +49,13 @@ public: \
 	ADVANCEDSESSIONS_API virtual ~UStartSessionCallbackProxyAdvanced();
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_7_PROLOG
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_GENERATED_BODY_LEGACY \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_7_PROLOG
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_RPC_WRAPPERS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_INCLASS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_STANDARD_CONSTRUCTORS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_RPC_WRAPPERS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_INCLASS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h_10_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,6 +65,6 @@ class UStartSessionCallbackProxyAdvanced;
 // ********** End Class UStartSessionCallbackProxyAdvanced *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h
+#define CURRENT_FILE_ID FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_StartSessionCallbackProxyAdvanced_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

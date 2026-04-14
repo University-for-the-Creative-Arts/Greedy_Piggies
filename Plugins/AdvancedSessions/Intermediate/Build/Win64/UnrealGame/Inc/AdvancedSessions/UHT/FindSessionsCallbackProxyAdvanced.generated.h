@@ -24,14 +24,14 @@ struct FBlueprintSessionResult;
 struct FSessionsSearchSetting;
 
 // ********** Begin Class UFindSessionsCallbackProxyAdvanced ***************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_RPC_WRAPPERS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execFilterSessionResults); \
 	DECLARE_FUNCTION(execFindSessionsAdvanced);
 
 
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_UFindSessionsCallbackProxyAdvanced_NoRegister();
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_INCLASS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_INCLASS \
 private: \
 	static void StaticRegisterNativesUFindSessionsCallbackProxyAdvanced(); \
 	friend struct Z_Construct_UClass_UFindSessionsCallbackProxyAdvanced_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UFindSessionsCallbackProxyAdvanced)
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_STANDARD_CONSTRUCTORS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	ADVANCEDSESSIONS_API UFindSessionsCallbackProxyAdvanced(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UFindSessionsCallbackProxyAdvanced) \
@@ -54,13 +54,13 @@ public: \
 	ADVANCEDSESSIONS_API virtual ~UFindSessionsCallbackProxyAdvanced();
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_16_PROLOG
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_GENERATED_BODY_LEGACY \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_16_PROLOG
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_RPC_WRAPPERS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_INCLASS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_STANDARD_CONSTRUCTORS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_RPC_WRAPPERS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_INCLASS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h_19_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -70,6 +70,6 @@ class UFindSessionsCallbackProxyAdvanced;
 // ********** End Class UFindSessionsCallbackProxyAdvanced *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h
+#define CURRENT_FILE_ID FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
