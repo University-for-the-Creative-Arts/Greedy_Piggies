@@ -502,14 +502,14 @@ UAdvancedFriendsLibrary::~UAdvancedFriendsLibrary() {}
 // ********** End Class UAdvancedFriendsLibrary ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_Statics
+struct Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UAdvancedFriendsLibrary, UAdvancedFriendsLibrary::StaticClass, TEXT("UAdvancedFriendsLibrary"), &Z_Registration_Info_UClass_UAdvancedFriendsLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAdvancedFriendsLibrary), 2322567337U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_423242618(TEXT("/Script/AdvancedSessions"),
-	Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_423242618(TEXT("/Script/AdvancedSessions"),
+	Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsLibrary_h__Script_AdvancedSessions_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

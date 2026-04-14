@@ -166,14 +166,14 @@ USteamNotificationsSubsystem::~USteamNotificationsSubsystem() {}
 // ********** End Class USteamNotificationsSubsystem ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_Statics
+struct Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_USteamNotificationsSubsystem, USteamNotificationsSubsystem::StaticClass, TEXT("USteamNotificationsSubsystem"), &Z_Registration_Info_UClass_USteamNotificationsSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USteamNotificationsSubsystem), 3725206527U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_1309998382(TEXT("/Script/AdvancedSteamSessions"),
-	Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_1309998382(TEXT("/Script/AdvancedSteamSessions"),
+	Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2322268_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h__Script_AdvancedSteamSessions_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -234,14 +234,14 @@ USendFriendInviteCallbackProxy::~USendFriendInviteCallbackProxy() {}
 // ********** End Class USendFriendInviteCallbackProxy *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_Statics
+struct Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_USendFriendInviteCallbackProxy, USendFriendInviteCallbackProxy::StaticClass, TEXT("USendFriendInviteCallbackProxy"), &Z_Registration_Info_UClass_USendFriendInviteCallbackProxy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USendFriendInviteCallbackProxy), 294938222U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_3635263612(TEXT("/Script/AdvancedSessions"),
-	Z_CompiledInDeferFile_FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_3635263612(TEXT("/Script/AdvancedSessions"),
+	Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_SendFriendInviteCallbackProxy_h__Script_AdvancedSessions_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************
