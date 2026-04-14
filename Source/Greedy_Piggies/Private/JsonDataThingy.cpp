@@ -34,7 +34,7 @@ void UJsonDataThingy::JsonMakerAndSender(float secondsPlayed, FCombined_QA combi
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 30.f, FColor::Orange, fileLocationMsg);
 
-	//void SendJson();
+	void SendJson();
 }
 
 FUserHardwareData UJsonDataThingy::GetUserHardware()
@@ -64,18 +64,26 @@ FUserHardwareData UJsonDataThingy::GetUserHardware()
 
 void UJsonDataThingy::SendJson()
 {
+	FString ProjectID = TEXT("");
+	FString TableName = TEXT("");
+	FString APIKey = TEXT("");
+
+	FString URL = FString::Printf(TEXT("https://%s.supabase.co/rest/v1/%s"), *ProjectID, *TableName);
+
 	//Send the JSON file to the server here.
 	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = FHttpModule::Get().CreateRequest();
-	Request->SetURL("https://your-api-endpoint.com/data");
+	Request->SetURL(URL);
 	Request->SetVerb("POST");
 
-	Request->SetHeader("Content-Type", TEXT("application/json"));
-
+	Request->SetHeader(TEXT("Content-Type"), TEXT("application/json"));
+	Request->SetHeader(TEXT("apikey"), APIKey);
+	Request->SetHeader(TEXT("Authorization"), FString::Printf(TEXT("Bearer %s"), *APIKey));
+	
 	Request->SetContentAsString(JsonString);
 
-	Request->OnProcessRequestComplete().BindUObject(this,&UJsonDataThingy::OnResponseReceived);
-
+	Request->OnProcessRequestComplete().BindUObject(this, &UJsonDataThingy::OnResponseReceived);
 	Request->ProcessRequest();
+	
 }
 
 void UJsonDataThingy::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
