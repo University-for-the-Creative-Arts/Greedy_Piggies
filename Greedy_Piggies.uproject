@@ -1,15 +1,8 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{66919654-43F7-A2F5-AD9E-F797792F5E7D}",
+	"EngineAssociation": "{2907ABAD-4C21-39DB-3CD8-6588A6B32FB8}",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "Greedy_Piggies",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
-	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
