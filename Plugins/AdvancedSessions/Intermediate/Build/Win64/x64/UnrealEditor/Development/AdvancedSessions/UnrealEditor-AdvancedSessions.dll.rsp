@@ -36,11 +36,11 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
-"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Intermediate/Build/Win64/x64/Greedy_PiggiesEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
-"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Module.AdvancedSessions.1.cpp.obj"
-"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Module.AdvancedSessions.2.cpp.obj"
-"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Module.AdvancedSessions.3.cpp.obj"
-"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Default.rc2.res"
+"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Intermediate/Build/Win64/x64/Greedy_PiggiesEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Module.AdvancedSessions.1.cpp.obj"
+"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Module.AdvancedSessions.2.cpp.obj"
+"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Module.AdvancedSessions.3.cpp.obj"
+"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/AdvancedSessions/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
@@ -74,6 +74,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Binaries/Win64/UnrealEditor-AdvancedSessions.dll"
-/PDB:"C:/Users/2322268/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Binaries/Win64/UnrealEditor-AdvancedSessions.pdb"
+/OUT:"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Binaries/Win64/UnrealEditor-AdvancedSessions.dll"
+/PDB:"C:/Users/drago/OneDrive/Documents/GitHub/Greedy_Piggies/Plugins/AdvancedSessions/Binaries/Win64/UnrealEditor-AdvancedSessions.pdb"
 /ignore:4078
