@@ -15,7 +15,10 @@ public class Greedy_Piggies : ModuleRules
             "OnlineSubsystem", 
             "OnlineSubsystemSteam", 
             "Json", 
-            "JsonUtilities" 
+            "JsonUtilities",
+            "Http",
+            "RHI", 
+            "RenderCore"
         });
 
         PrivateDependencyModuleNames.AddRange(new string[] {  });
