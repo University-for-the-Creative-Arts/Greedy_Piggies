@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Delegate FOnSteamOverlayActivated **********************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_16_DELEGATE \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_16_DELEGATE \
 ADVANCEDSTEAMSESSIONS_API void FOnSteamOverlayActivated_DelegateWrapper(const FMulticastScriptDelegate& OnSteamOverlayActivated, bool bOverlayState);
 
 
@@ -26,7 +26,7 @@ ADVANCEDSTEAMSESSIONS_API void FOnSteamOverlayActivated_DelegateWrapper(const FM
 // ********** Begin Class USteamNotificationsSubsystem *********************************************
 ADVANCEDSTEAMSESSIONS_API UClass* Z_Construct_UClass_USteamNotificationsSubsystem_NoRegister();
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUSteamNotificationsSubsystem(); \
 	friend struct Z_Construct_UClass_USteamNotificationsSubsystem_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(USteamNotificationsSubsystem)
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	USteamNotificationsSubsystem(USteamNotificationsSubsystem&&) = delete; \
 	USteamNotificationsSubsystem(const USteamNotificationsSubsystem&) = delete; \
@@ -47,12 +47,12 @@ public: \
 	NO_API virtual ~USteamNotificationsSubsystem();
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_18_PROLOG
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_GENERATED_BODY \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_18_PROLOG
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_INCLASS_NO_PURE_DECLS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -62,6 +62,6 @@ class USteamNotificationsSubsystem;
 // ********** End Class USteamNotificationsSubsystem ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h
+#define CURRENT_FILE_ID FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamNotificationsSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
