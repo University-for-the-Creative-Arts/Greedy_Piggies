@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FBPUserOnlineAccount **********************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_48_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_48_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPUserOnlineAccount_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -26,7 +26,7 @@ struct FBPUserOnlineAccount;
 // ********** End ScriptStruct FBPUserOnlineAccount ************************************************
 
 // ********** Begin ScriptStruct FBPUniqueNetId ****************************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_150_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_150_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPUniqueNetId_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -35,7 +35,7 @@ struct FBPUniqueNetId;
 // ********** End ScriptStruct FBPUniqueNetId ******************************************************
 
 // ********** Begin ScriptStruct FBPOnlineUser *****************************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_224_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_224_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPOnlineUser_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -44,7 +44,7 @@ struct FBPOnlineUser;
 // ********** End ScriptStruct FBPOnlineUser *******************************************************
 
 // ********** Begin ScriptStruct FBPOnlineRecentPlayer *********************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_238_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_238_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPOnlineRecentPlayer_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct(); \
 	typedef FBPOnlineUser Super;
@@ -54,7 +54,7 @@ struct FBPOnlineRecentPlayer;
 // ********** End ScriptStruct FBPOnlineRecentPlayer ***********************************************
 
 // ********** Begin ScriptStruct FBPFriendPresenceInfo *********************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_249_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_249_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPFriendPresenceInfo_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -63,7 +63,7 @@ struct FBPFriendPresenceInfo;
 // ********** End ScriptStruct FBPFriendPresenceInfo ***********************************************
 
 // ********** Begin ScriptStruct FBPFriendInfo *****************************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_282_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_282_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPFriendInfo_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -72,7 +72,7 @@ struct FBPFriendInfo;
 // ********** End ScriptStruct FBPFriendInfo *******************************************************
 
 // ********** Begin ScriptStruct FSessionPropertyKeyPair *******************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_325_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_325_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSessionPropertyKeyPair_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -81,7 +81,7 @@ struct FSessionPropertyKeyPair;
 // ********** End ScriptStruct FSessionPropertyKeyPair *********************************************
 
 // ********** Begin ScriptStruct FSessionsSearchSetting ********************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_336_GENERATED_BODY \
+#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h_336_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FSessionsSearchSetting_Statics; \
 	ADVANCEDSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -90,7 +90,7 @@ struct FSessionsSearchSetting;
 // ********** End ScriptStruct FSessionsSearchSetting **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h
+#define CURRENT_FILE_ID FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h
 
 // ********** Begin Enum EBPUserPrivileges *********************************************************
 #define FOREACH_ENUM_EBPUSERPRIVILEGES(op) \
