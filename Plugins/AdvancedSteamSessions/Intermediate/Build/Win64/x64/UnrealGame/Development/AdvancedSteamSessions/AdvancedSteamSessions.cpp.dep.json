@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\source\\advancedsteamsessions\\private\\advancedsteamsessions.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggies\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\x64\\unrealgame\\development\\advancedsteamsessions\\definitions.advancedsteamsessions.h",
+            "c:\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\source\\advancedsteamsessions\\classes\\advancedsteamsessions.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
