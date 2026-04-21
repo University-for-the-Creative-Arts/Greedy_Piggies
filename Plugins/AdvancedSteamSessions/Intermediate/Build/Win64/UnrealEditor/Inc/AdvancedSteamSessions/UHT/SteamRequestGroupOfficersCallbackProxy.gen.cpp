@@ -326,7 +326,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(USteamRequestGroupOfficersCallbackProxy);
 // ********** End Class USteamRequestGroupOfficersCallbackProxy ************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics
+struct Z_CompiledInDeferFile_FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
 		{ FBPSteamGroupOfficer::StaticStruct, Z_Construct_UScriptStruct_FBPSteamGroupOfficer_Statics::NewStructOps, TEXT("BPSteamGroupOfficer"), &Z_Registration_Info_UScriptStruct_FBPSteamGroupOfficer, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FBPSteamGroupOfficer), 3893558459U) },
@@ -335,9 +335,9 @@ struct Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSess
 		{ Z_Construct_UClass_USteamRequestGroupOfficersCallbackProxy, USteamRequestGroupOfficersCallbackProxy::StaticClass, TEXT("USteamRequestGroupOfficersCallbackProxy"), &Z_Registration_Info_UClass_USteamRequestGroupOfficersCallbackProxy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USteamRequestGroupOfficersCallbackProxy), 1819561346U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_3312249350(TEXT("/Script/AdvancedSteamSessions"),
-	Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ScriptStructInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_3312249350(TEXT("/Script/AdvancedSteamSessions"),
+	Z_CompiledInDeferFile_FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamRequestGroupOfficersCallbackProxy_h__Script_AdvancedSteamSessions_Statics::ScriptStructInfo),
 	nullptr, 0);
 // ********** End Registration *********************************************************************
 

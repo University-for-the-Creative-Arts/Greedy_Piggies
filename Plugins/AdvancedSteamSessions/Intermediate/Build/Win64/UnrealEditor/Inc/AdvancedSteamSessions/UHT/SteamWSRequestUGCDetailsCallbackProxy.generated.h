@@ -22,20 +22,20 @@ struct FBPSteamWorkshopID;
 struct FBPSteamWorkshopItemDetails;
 
 // ********** Begin Delegate FBlueprintWorkshopDetailsDelegate *************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_50_DELEGATE \
+#define FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_50_DELEGATE \
 ADVANCEDSTEAMSESSIONS_API void FBlueprintWorkshopDetailsDelegate_DelegateWrapper(const FMulticastScriptDelegate& BlueprintWorkshopDetailsDelegate, FBPSteamWorkshopItemDetails const& WorkShopDetails);
 
 
 // ********** End Delegate FBlueprintWorkshopDetailsDelegate ***************************************
 
 // ********** Begin Class USteamWSRequestUGCDetailsCallbackProxy ***********************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_RPC_WRAPPERS \
+#define FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execGetWorkshopItemDetails);
 
 
 ADVANCEDSTEAMSESSIONS_API UClass* Z_Construct_UClass_USteamWSRequestUGCDetailsCallbackProxy_NoRegister();
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_INCLASS \
+#define FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_INCLASS \
 private: \
 	static void StaticRegisterNativesUSteamWSRequestUGCDetailsCallbackProxy(); \
 	friend struct Z_Construct_UClass_USteamWSRequestUGCDetailsCallbackProxy_Statics; \
@@ -46,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(USteamWSRequestUGCDetailsCallbackProxy)
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_STANDARD_CONSTRUCTORS \
+#define FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	ADVANCEDSTEAMSESSIONS_API USteamWSRequestUGCDetailsCallbackProxy(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(USteamWSRequestUGCDetailsCallbackProxy) \
@@ -58,13 +58,13 @@ public: \
 	ADVANCEDSTEAMSESSIONS_API virtual ~USteamWSRequestUGCDetailsCallbackProxy();
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_52_PROLOG
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_GENERATED_BODY_LEGACY \
+#define FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_52_PROLOG
+#define FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_RPC_WRAPPERS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_INCLASS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_STANDARD_CONSTRUCTORS \
+	FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_RPC_WRAPPERS \
+	FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_INCLASS \
+	FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h_55_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -74,6 +74,6 @@ class USteamWSRequestUGCDetailsCallbackProxy;
 // ********** End Class USteamWSRequestUGCDetailsCallbackProxy *************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h
+#define CURRENT_FILE_ID FID_Users_2309989_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_SteamWSRequestUGCDetailsCallbackProxy_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
