@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class AAdvancedGameSession *****************************************************
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_AAdvancedGameSession_NoRegister();
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_INCLASS \
+#define FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_INCLASS \
 private: \
 	static void StaticRegisterNativesAAdvancedGameSession(); \
 	friend struct Z_Construct_UClass_AAdvancedGameSession_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(AAdvancedGameSession)
 
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_STANDARD_CONSTRUCTORS \
+#define FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAdvancedGameSession(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AAdvancedGameSession) \
@@ -42,12 +42,12 @@ public: \
 	NO_API virtual ~AAdvancedGameSession();
 
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_23_PROLOG
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_GENERATED_BODY_LEGACY \
+#define FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_23_PROLOG
+#define FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_INCLASS \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_STANDARD_CONSTRUCTORS \
+	FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_INCLASS \
+	FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h_26_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +57,6 @@ class AAdvancedGameSession;
 // ********** End Class AAdvancedGameSession *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h
+#define CURRENT_FILE_ID FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedGameSession_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

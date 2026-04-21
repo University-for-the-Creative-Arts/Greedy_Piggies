@@ -1180,7 +1180,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FSessionsSearchSetting()
 // ********** End ScriptStruct FSessionsSearchSetting **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics
+struct Z_CompiledInDeferFile_FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EBPUserPrivileges_StaticEnum, TEXT("EBPUserPrivileges"), &Z_Registration_Info_UEnum_EBPUserPrivileges, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3561584933U) },
@@ -1204,10 +1204,10 @@ struct Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_P
 		{ FSessionsSearchSetting::StaticStruct, Z_Construct_UScriptStruct_FSessionsSearchSetting_Statics::NewStructOps, TEXT("SessionsSearchSetting"), &Z_Registration_Info_UScriptStruct_FSessionsSearchSetting, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSessionsSearchSetting), 2206548994U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_1421065887(TEXT("/Script/AdvancedSessions"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_1421065887(TEXT("/Script/AdvancedSessions"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2406348_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_BlueprintDataDefinitions_h__Script_AdvancedSessions_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
