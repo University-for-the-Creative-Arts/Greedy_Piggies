@@ -21,10 +21,10 @@ struct FBlueprintSessionResult;
 struct FBPUniqueNetId;
 
 // ********** Begin Class UAdvancedFriendsGameInstance *********************************************
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_CALLBACK_WRAPPERS
+#define FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_CALLBACK_WRAPPERS
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_UAdvancedFriendsGameInstance_NoRegister();
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAdvancedFriendsGameInstance(); \
 	friend struct Z_Construct_UClass_UAdvancedFriendsGameInstance_Statics; \
@@ -35,7 +35,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedFriendsGameInstance)
 
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UAdvancedFriendsGameInstance(UAdvancedFriendsGameInstance&&) = delete; \
 	UAdvancedFriendsGameInstance(const UAdvancedFriendsGameInstance&) = delete; \
@@ -45,13 +45,13 @@ public: \
 	NO_API virtual ~UAdvancedFriendsGameInstance();
 
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_27_PROLOG
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_GENERATED_BODY \
+#define FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_27_PROLOG
+#define FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_CALLBACK_WRAPPERS \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_INCLASS_NO_PURE_DECLS \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_ENHANCED_CONSTRUCTORS \
+	FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_CALLBACK_WRAPPERS \
+	FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_INCLASS_NO_PURE_DECLS \
+	FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -61,6 +61,6 @@ class UAdvancedFriendsGameInstance;
 // ********** End Class UAdvancedFriendsGameInstance ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h
+#define CURRENT_FILE_ID FID_Users_2309989_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedFriendsGameInstance_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
