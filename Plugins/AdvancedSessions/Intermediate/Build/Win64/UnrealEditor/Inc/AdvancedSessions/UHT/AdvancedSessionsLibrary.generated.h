@@ -30,7 +30,7 @@ struct FSessionsSearchSetting;
 struct FUniqueNetIdRepl;
 
 // ********** Begin Class UAdvancedSessionsLibrary *************************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execServerTravel); \
 	DECLARE_FUNCTION(execHasOnlineSubsystem); \
 	DECLARE_FUNCTION(execGetNetPlayerIndex); \
@@ -74,7 +74,7 @@ struct FUniqueNetIdRepl;
 
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_UAdvancedSessionsLibrary_NoRegister();
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAdvancedSessionsLibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedSessionsLibrary_Statics; \
@@ -85,7 +85,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedSessionsLibrary)
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedSessionsLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -97,13 +97,13 @@ public: \
 	NO_API virtual ~UAdvancedSessionsLibrary();
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_PROLOG
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_GENERATED_BODY \
+#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_29_PROLOG
+#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_INCLASS_NO_PURE_DECLS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_ENHANCED_CONSTRUCTORS \
+	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_INCLASS_NO_PURE_DECLS \
+	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -113,6 +113,6 @@ class UAdvancedSessionsLibrary;
 // ********** End Class UAdvancedSessionsLibrary ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h
+#define CURRENT_FILE_ID FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedSessionsLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
