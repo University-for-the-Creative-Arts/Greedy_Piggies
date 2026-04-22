@@ -24,7 +24,7 @@ struct FBPUniqueNetId;
 struct FBPUserOnlineAccount;
 
 // ********** Begin Class UAdvancedIdentityLibrary *************************************************
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetUserAccountAttribute); \
 	DECLARE_FUNCTION(execGetUserAccountDisplayName); \
 	DECLARE_FUNCTION(execGetUserAccountRealName); \
@@ -41,7 +41,7 @@ struct FBPUserOnlineAccount;
 
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_UAdvancedIdentityLibrary_NoRegister();
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAdvancedIdentityLibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedIdentityLibrary_Statics; \
@@ -52,7 +52,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedIdentityLibrary)
 
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedIdentityLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -64,13 +64,13 @@ public: \
 	NO_API virtual ~UAdvancedIdentityLibrary();
 
 
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_23_PROLOG
-#define FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_GENERATED_BODY \
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_23_PROLOG
+#define FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_INCLASS_NO_PURE_DECLS \
-	FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_ENHANCED_CONSTRUCTORS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_INCLASS_NO_PURE_DECLS \
+	FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -80,6 +80,6 @@ class UAdvancedIdentityLibrary;
 // ********** End Class UAdvancedIdentityLibrary ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2315276_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h
+#define CURRENT_FILE_ID FID_Users_2304751_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_AdvancedIdentityLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
