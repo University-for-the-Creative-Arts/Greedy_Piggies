@@ -353,14 +353,14 @@ UFindSessionsCallbackProxyAdvanced::~UFindSessionsCallbackProxyAdvanced() {}
 // ********** End Class UFindSessionsCallbackProxyAdvanced *****************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_Statics
+struct Z_CompiledInDeferFile_FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UFindSessionsCallbackProxyAdvanced, UFindSessionsCallbackProxyAdvanced::StaticClass, TEXT("UFindSessionsCallbackProxyAdvanced"), &Z_Registration_Info_UClass_UFindSessionsCallbackProxyAdvanced, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UFindSessionsCallbackProxyAdvanced), 1586178635U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_1142041180(TEXT("/Script/AdvancedSessions"),
-	Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_1142041180(TEXT("/Script/AdvancedSessions"),
+	Z_CompiledInDeferFile_FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_FindSessionsCallbackProxyAdvanced_h__Script_AdvancedSessions_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

@@ -27,7 +27,7 @@ struct FBPSteamGroupInfo;
 struct FBPUniqueNetId;
 
 // ********** Begin ScriptStruct FBPSteamGroupInfo *************************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_291_GENERATED_BODY \
+#define FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_291_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FBPSteamGroupInfo_Statics; \
 	ADVANCEDSTEAMSESSIONS_API static class UScriptStruct* StaticStruct();
 
@@ -36,7 +36,7 @@ struct FBPSteamGroupInfo;
 // ********** End ScriptStruct FBPSteamGroupInfo ***************************************************
 
 // ********** Begin Class UAdvancedSteamFriendsLibrary *********************************************
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execIsSteamInBigPictureMode); \
 	DECLARE_FUNCTION(execFilterText); \
 	DECLARE_FUNCTION(execInitTextFiltering); \
@@ -54,7 +54,7 @@ struct FBPSteamGroupInfo;
 
 ADVANCEDSTEAMSESSIONS_API UClass* Z_Construct_UClass_UAdvancedSteamFriendsLibrary_NoRegister();
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_INCLASS_NO_PURE_DECLS \
+#define FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUAdvancedSteamFriendsLibrary(); \
 	friend struct Z_Construct_UClass_UAdvancedSteamFriendsLibrary_Statics; \
@@ -65,7 +65,7 @@ public: \
 	DECLARE_SERIALIZER(UAdvancedSteamFriendsLibrary)
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_ENHANCED_CONSTRUCTORS \
+#define FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UAdvancedSteamFriendsLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -77,13 +77,13 @@ public: \
 	NO_API virtual ~UAdvancedSteamFriendsLibrary();
 
 
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_323_PROLOG
-#define FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_GENERATED_BODY \
+#define FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_323_PROLOG
+#define FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_INCLASS_NO_PURE_DECLS \
-	FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_ENHANCED_CONSTRUCTORS \
+	FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_INCLASS_NO_PURE_DECLS \
+	FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h_326_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -93,7 +93,7 @@ class UAdvancedSteamFriendsLibrary;
 // ********** End Class UAdvancedSteamFriendsLibrary ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h
+#define CURRENT_FILE_ID FID_Users_2308032_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSteamSessions_Source_AdvancedSteamSessions_Classes_AdvancedSteamFriendsLibrary_h
 
 // ********** Begin Enum SteamAvatarSize ***********************************************************
 #define FOREACH_ENUM_STEAMAVATARSIZE(op) \
