@@ -21,13 +21,13 @@ class UCancelFindSessionsCallbackProxy;
 class UObject;
 
 // ********** Begin Class UCancelFindSessionsCallbackProxy *****************************************
-#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_RPC_WRAPPERS \
+#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execCancelFindSessions);
 
 
 ADVANCEDSESSIONS_API UClass* Z_Construct_UClass_UCancelFindSessionsCallbackProxy_NoRegister();
 
-#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_INCLASS \
+#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesUCancelFindSessionsCallbackProxy(); \
 	friend struct Z_Construct_UClass_UCancelFindSessionsCallbackProxy_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(UCancelFindSessionsCallbackProxy)
 
 
-#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_STANDARD_CONSTRUCTORS \
+#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	ADVANCEDSESSIONS_API UCancelFindSessionsCallbackProxy(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UCancelFindSessionsCallbackProxy) \
@@ -50,13 +50,13 @@ public: \
 	ADVANCEDSESSIONS_API virtual ~UCancelFindSessionsCallbackProxy();
 
 
-#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_9_PROLOG
-#define FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_GENERATED_BODY_LEGACY \
+#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_9_PROLOG
+#define FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_RPC_WRAPPERS \
-	FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_INCLASS \
-	FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_STANDARD_CONSTRUCTORS \
+	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_RPC_WRAPPERS \
+	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_INCLASS \
+	FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,6 +66,6 @@ class UCancelFindSessionsCallbackProxy;
 // ********** End Class UCancelFindSessionsCallbackProxy *******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_2404781_UCREATIVE_Documents_GitHub_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h
+#define CURRENT_FILE_ID FID_Github_Greedy_Piggies_Plugins_AdvancedSessions_Source_AdvancedSessions_Classes_CancelFindSessionsCallbackProxy_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
