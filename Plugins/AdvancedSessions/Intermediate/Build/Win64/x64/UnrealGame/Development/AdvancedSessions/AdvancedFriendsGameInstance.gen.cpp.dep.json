@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedfriendsgameinstance.gen.cpp",
+        "Source": "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedfriendsgameinstance.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggies\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.h.pch",
+        "PCH": "c:\\users\\2404781\\documents\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggies\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\x64\\unrealgame\\development\\advancedsessions\\definitions.advancedsessions.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\source\\advancedsessions\\classes\\advancedfriendsgameinstance.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\source\\advancedsessions\\classes\\blueprintdatadefinitions.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\x64\\unrealgame\\development\\advancedsessions\\definitions.advancedsessions.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\source\\advancedsessions\\classes\\advancedfriendsgameinstance.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\source\\advancedsessions\\classes\\blueprintdatadefinitions.h",
             "c:\\program files\\epic games\\5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\playerstate.h",
             "c:\\program files\\epic games\\5.6\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\playerstate.generated.h",
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\interfaces\\onlinesessioninterface.h",
@@ -117,13 +117,13 @@
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystemutils\\intermediate\\build\\win64\\unrealgame\\inc\\onlinesubsystemutils\\uht\\testbeaconhost.generated.h",
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystemutils\\source\\onlinesubsystemutils\\classes\\turnbasedblueprintlibrary.h",
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystemutils\\intermediate\\build\\win64\\unrealgame\\inc\\onlinesubsystemutils\\uht\\turnbasedblueprintlibrary.generated.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\blueprintdatadefinitions.generated.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\blueprintdatadefinitions.generated.h",
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\online.h",
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\interfaces\\onlineuserinterface.h",
             "c:\\program files\\epic games\\5.6\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\interfaces\\onlinepresenceinterface.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\source\\advancedsessions\\classes\\advancedfriendsinterface.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedfriendsinterface.generated.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedfriendsgameinstance.generated.h"
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\source\\advancedsessions\\classes\\advancedfriendsinterface.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedfriendsinterface.generated.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsessions\\uht\\advancedfriendsgameinstance.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

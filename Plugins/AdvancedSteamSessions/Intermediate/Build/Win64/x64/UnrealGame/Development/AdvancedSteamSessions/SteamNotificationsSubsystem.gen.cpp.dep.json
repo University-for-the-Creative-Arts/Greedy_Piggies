@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsteamsessions\\uht\\steamnotificationssubsystem.gen.cpp",
+        "Source": "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsteamsessions\\uht\\steamnotificationssubsystem.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggies\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.h.pch",
+        "PCH": "c:\\users\\2404781\\documents\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggies\\development\\engine\\sharedpch.engine.project.valapi.valexpapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\x64\\unrealgame\\development\\advancedsteamsessions\\definitions.advancedsteamsessions.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\source\\advancedsteamsessions\\classes\\steamnotificationssubsystem.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\x64\\unrealgame\\development\\advancedsteamsessions\\definitions.advancedsteamsessions.h",
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\source\\advancedsteamsessions\\classes\\steamnotificationssubsystem.h",
             "c:\\program files\\epic games\\5.6\\engine\\source\\thirdparty\\steamworks\\steamv157\\sdk\\public\\steam\\steam_api.h",
             "c:\\program files\\epic games\\5.6\\engine\\source\\thirdparty\\steamworks\\steamv157\\sdk\\public\\steam\\steam_api_common.h",
             "c:\\program files\\epic games\\5.6\\engine\\source\\thirdparty\\steamworks\\steamv157\\sdk\\public\\steam\\steamtypes.h",
@@ -41,7 +41,7 @@
             "c:\\program files\\epic games\\5.6\\engine\\source\\thirdparty\\steamworks\\steamv157\\sdk\\public\\steam\\steamnetworkingtypes.h",
             "c:\\program files\\epic games\\5.6\\engine\\source\\thirdparty\\steamworks\\steamv157\\sdk\\public\\steam\\isteamnetworkingsockets.h",
             "c:\\program files\\epic games\\5.6\\engine\\source\\thirdparty\\steamworks\\steamv157\\sdk\\public\\steam\\isteamnetworkingutils.h",
-            "c:\\users\\2404781.ucreative\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsteamsessions\\uht\\steamnotificationssubsystem.generated.h"
+            "c:\\users\\2404781\\documents\\github\\greedy_piggies\\plugins\\advancedsteamsessions\\intermediate\\build\\win64\\unrealgame\\inc\\advancedsteamsessions\\uht\\steamnotificationssubsystem.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
