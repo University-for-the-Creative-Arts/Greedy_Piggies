@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\2406348\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedsessions\\uht\\advancedsessions.init.gen.cpp",
+        "Source": "c:\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\unrealeditor\\inc\\advancedsessions\\uht\\advancedsessions.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\2406348\\documents\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggieseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "PCH": "c:\\github\\greedy_piggies\\intermediate\\build\\win64\\x64\\greedy_piggieseditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\2406348\\documents\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\advancedsessions\\definitions.advancedsessions.h"
+            "c:\\github\\greedy_piggies\\plugins\\advancedsessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\advancedsessions\\definitions.advancedsessions.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
