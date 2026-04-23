@@ -6,7 +6,7 @@
 
 
 USTRUCT()
-struct FCombinedUserData
+struct FCombinedUserData : public FTableRowBase
 {
 	GENERATED_BODY()
 	

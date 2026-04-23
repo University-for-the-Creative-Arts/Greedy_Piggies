@@ -1,4 +1,4 @@
-﻿#include "JsonDataThingy.h"
+﻿#include "MyDataThing.h"
 
 //#include <cmath>
 //#include <string>
@@ -12,7 +12,7 @@
 
 FString JsonString;
 
-void UJsonDataThingy::JsonMakerAndSender(float secondsPlayed, FCombined_QA combined_QA)
+void UMyDataThing::JsonMakerAndSender(float secondsPlayed, FCombined_QA combined_QA)
 {
 	FCombinedUserData combinedUserData;
 	
@@ -37,7 +37,12 @@ void UJsonDataThingy::JsonMakerAndSender(float secondsPlayed, FCombined_QA combi
 	void SendJson();
 }
 
-FUserHardwareData UJsonDataThingy::GetUserHardware()
+void UMyDataThing::CSV_MakerAndSender(float secondsPlayed, FCombined_QA combined_QA)
+{
+	
+}
+
+FUserHardwareData UMyDataThing::GetUserHardware()
 {
 	FUserHardwareData userHardwareData;
 	
@@ -62,11 +67,11 @@ FUserHardwareData UJsonDataThingy::GetUserHardware()
 	return userHardwareData;
 }
 
-void UJsonDataThingy::SendJson()
+void UMyDataThing::SendJson()
 {
 	FString ProjectID = TEXT("");
 	FString TableName = TEXT("");
-	FString APIKey = TEXT("");
+	FString APIKey = TEXT("sb_publishable_WVN2I77W9HEjaWJDal4lOg_flpujFFP");
 
 	FString URL = FString::Printf(TEXT("https://%s.supabase.co/rest/v1/%s"), *ProjectID, *TableName);
 
@@ -81,12 +86,12 @@ void UJsonDataThingy::SendJson()
 	
 	Request->SetContentAsString(JsonString);
 
-	Request->OnProcessRequestComplete().BindUObject(this, &UJsonDataThingy::OnResponseReceived);
+	Request->OnProcessRequestComplete().BindUObject(this, &UMyDataThing::OnResponseReceived);
 	Request->ProcessRequest();
 	
 }
 
-void UJsonDataThingy::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
+void UMyDataThing::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
 {
 	if (bWasSuccessful && Response.IsValid())
 	{
@@ -98,7 +103,7 @@ void UJsonDataThingy::OnResponseReceived(FHttpRequestPtr Request, FHttpResponseP
 	}
 }
 
-FString UJsonDataThingy::FileNameMaker()
+FString UMyDataThing::FileNameMaker()
 {
 	FDateTime now = FDateTime::UtcNow();
 
@@ -114,7 +119,7 @@ FString UJsonDataThingy::FileNameMaker()
 	return fileName;
 }
 
-FString UJsonDataThingy::TimePlayedFormatter(float secondsPlayed)
+FString UMyDataThing::TimePlayedFormatter(float secondsPlayed)
 {
 	int32 hours = FMath::TruncToInt(secondsPlayed / 3600.0f);
 	float minutesRemaining = (secondsPlayed / 3600.0f - (float)hours) * 60.0f;

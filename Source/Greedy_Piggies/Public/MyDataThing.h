@@ -4,16 +4,16 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "Interfaces/IHttpRequest.h"
 #include "HttpModule.h"
-#include "JsonDataThingy.generated.h"
+#include "MyDataThing.generated.h"
 
 UCLASS()
-class GREEDY_PIGGIES_API UJsonDataThingy : public UBlueprintFunctionLibrary
+class GREEDY_PIGGIES_API UMyDataThing : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 	
 public:
-	UFUNCTION(BlueprintCallable, Category = "HowToMakeAJson") static void JsonMakerAndSender(float secondsPlayed, const FCombined_QA combined_QA);
-		
+	UFUNCTION(BlueprintCallable, Category = "MyDataFileMakers") static void JsonMakerAndSender(float secondsPlayed, const FCombined_QA combined_QA);
+	UFUNCTION(BlueprintCallable, Category = "MyDataFileMakers") static void CSV_MakerAndSender(float secondsPlayed, const FCombined_QA combined_QA);
 protected:
 	
 private:
